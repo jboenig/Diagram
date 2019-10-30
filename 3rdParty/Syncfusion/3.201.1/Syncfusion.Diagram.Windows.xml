@@ -1,0 +1,2042 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Diagram.Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.Diagram">
+            <summary>
+            Interactive two-dimensional graphics control for diagramming,
+            technical drawing, visualization, simulation, and technical
+            drawing applications.
+            </summary>
+            <remarks>
+            <para>
+            This control provides a surface for rendering and manipulating 2D
+            shapes, symbols, text, and images. The user interface supports drag-
+            and-drop, scaling, rotation, zooming, grouping, ungrouping, connection
+            points, and many other features.
+            </para>
+            <para>
+            A diagram is composed of three objects: the 
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Model"/>,
+            the 
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.View"/>,
+            and the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Controller"/>.
+            The model-view-controller architecture provides a clear separation between
+            data, visualization, and user interface. The model contains the data portion
+            of the diagram, the view is responsible for rendering the diagram, and
+            the controller handles user interaction. The model, view, and controller
+            are accessible as properties in this control and can be manipulated
+            directly.
+            </para>
+            <para>
+            Some of the methods and properties in this class are just wrappers that
+            call identical methods in the model, view, or controller. For example,
+            the following two lines of codes are equivalent:
+            <code>
+            	diagram.Undo();
+            	// Same as
+            	diagram.Controller.Undo();
+            </code>
+            Methods that are simple wrappers are documented as such.
+            </para>
+            <para>
+            Graphical objects can be added to a diagram in several ways. One way is
+            through drag-and-drop. Symbols can be dragged from a
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView"/>
+            onto the diagram. Objects can also be added from the clipboard using the
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Paste"/>
+            method. Shapes can be drawn onto the diagram by activating one of several
+            drawing tools such as the
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.RectangleTool"/>. Objects
+            can also be created programmatically and added to the diagram using an
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.InsertNodesCmd"/> or by
+            calling the
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Model.AppendChild(Syncfusion.Windows.Forms.Diagram.INode,Syncfusion.Windows.Forms.Diagram.Layer)"/> method.
+            </para>
+            <para>
+            Activating user-interface tools is a task commonly performed by applications
+            using this control. The
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ActivateTool(System.String)"/>
+            method is used to activate tools. For example, the event handler for a
+            toolbar button that draws a rectangle would look like this.
+            <code>
+            private void drawRectangle_Click(object sender, System.EventArgs e)
+            {
+            	this.Diagram.ActivateTool("RectangleTool");
+            }
+            </code>
+            </para>
+            <para>
+            The
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ExecuteCommand(Syncfusion.Windows.Forms.Diagram.ICommand)"/>
+            method can be used to execute a command. A command is an object that encapsulates
+            an action and parameters used to execute the action. When a command is executed,
+            it is placed in an undo stack. Calling the
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UndoCommand"/>
+            method removes the command on the top of the undo stack and causes an undo
+            to occur. The
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.RedoCommand"/>
+            method will redo the last command that was removed from the undo stack. The
+            UndoCommand and RedoCommand methods are usually called in response to clicking
+            Undo and Redo on the Edit menu.
+            </para>
+            <para>
+            One advantage of the model-view-controller architecture is that the
+            parts are interchangable. Models, views, and controllers can be swapped
+            in and out independently. For example, the user interface of the diagram
+            can be completely replaced by swapping in a different controller
+            implementation. To accomplish this, you must subclass this class and
+            override one or more of the following methods:
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateModel"/>,
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateView"/>,
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateController"/>.
+            </para>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Model"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.View"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controller"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Tool"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.ICommand"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.#cctor">
+            <summary>
+            Constructs a Diagram object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.DetachContextMenu">
+            <summary>
+            Set the ContextMenu to NULL.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateModel">
+            <summary>
+            This method creates the model that is attached to the diagram.
+            </summary>
+            <returns>A new model object.</returns>
+            <remarks>
+            This method can be overidden in derived classes in order to perform
+            custom initialization of the model or to create custom models derived
+            from the
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.Model"/> class.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AttachModel(Syncfusion.Windows.Forms.Diagram.Model)">
+            <summary>
+            Attach an existing model to the diagram.
+            </summary>
+            <param name="value">Model object to attach.</param>
+            <remarks>
+            This method can be used to attach a new model object to the diagram.
+            NOTE: Using this method will cause the contents of the previous model
+            to be destroyed. Calling this method after your form's InitializeComponent
+            method is called will cause design-time property values to be lost.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateView">
+            <summary>
+            This method creates the view that is attached to the diagram.
+            </summary>
+            <returns>View object to attach.</returns>
+            <remarks>
+            This method can be overidden in derived classes in order to perform
+            custom initialization of the view or to create custom views derived
+            from the
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.View"/> class.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateController">
+            <summary>
+            This method creates the controller that is attached to the diagram.
+            </summary>
+            <returns>Controller object to attach.</returns>
+            <remarks>
+            This method can be overidden in derived classes in order to perform
+            custom initialization of the controller or to create custom controllers
+            derived from the
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.Controller"/> class.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Delete">
+            <summary>
+            Deletes the selected nodes from the diagram.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.Delete"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SetMagnification(System.Int32,System.Int32)">
+            <summary>
+            Sets the X and Y magnification (zoom) values on a scale of 1 to n.
+            </summary>
+            <param name="magX">Magnification percent along X axis.</param>
+            <param name="magY">Magnification percent along Y axis.</param>
+            <remarks>
+            This method sets the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.View.Magnification"/>
+            property.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ActivateTool(System.String)">
+            <summary>
+            Activates the specified tool in the controller.
+            </summary>
+            <param name="toolName">Name of tool to activate.</param>
+            <returns>True if tool activated; otherwise False.</returns>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.ActivateTool(System.String)"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MoveNodes(Syncfusion.Windows.Forms.Diagram.NodeCollection,System.Single,System.Single)">
+            <summary>
+            Moves the specified nodes by a X and Y offset.
+            </summary>
+            <param name="nodes">Nodes to be moved.</param>
+            <param name="dx">Distance to move along the X axis.</param>
+            <param name="dy">Distance to move along the Y axis.</param>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeUp">
+            <summary>
+            Nudge the selected components up by
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement"/>
+            units.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeDown">
+            <summary>
+            Nudge the selected components down by
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement"/>
+            units.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeLeft">
+            <summary>
+            Nudge the selected components left by
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement"/>
+            units.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeRight">
+            <summary>
+            Nudge the selected components right by
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement"/>
+            units.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Rotate(System.Single)">
+            <summary>
+            Rotates the selected nodes about their local origin by the specified
+            number of degrees.
+            </summary>
+            <param name="degrees">Number of degrees to rotate.</param>
+            <returns>True if successful; otherwise False.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.FlipHorizontal">
+            <summary>
+            Flips the selected nodes about their horizontal (X) axis.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.FlipVertical">
+            <summary>
+            Flips the selected nodes about their vertical (Y) axis.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignLeft">
+            <summary>
+            Aligns the selected nodes along the left edge of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignRight">
+            <summary>
+            Aligns the selected nodes along the right edge of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignTop">
+            <summary>
+            Aligns the selected nodes along the top edge of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignBottom">
+            <summary>
+            Aligns the selected nodes along the bottom edge of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignMiddle">
+            <summary>
+            Aligns the selected nodes along the horizontal center of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.AlignCenter">
+            <summary>
+            Aligns the selected nodes along the vertical center of the first node.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SpaceAcross">
+            <summary>
+            Positions the selected nodes for equal horizontal spacing.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SpaceDown">
+            <summary>
+            Positions the selected nodes for equal vertical spacing
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SameWidth">
+            <summary>
+            Sets the width of the selected nodes to be equal.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SameHeight">
+            <summary>
+            Sets the height of the selected nodes to be equal.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SameSize">
+            <summary>
+            Sets the width and height of the selected nodes to be equal.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.InsertImage">
+            <summary>
+            Displays a file open dialog that allows the user to pick an image to
+            insert into the diagram.
+            </summary>
+            <remarks>
+            This method activates either the BitmapTool or the MetafileTool
+            depending on the type of image passed in.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.BitmapTool"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.MetafileTool"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.InsertImage(System.IO.Stream)">
+            <summary>
+            Inserts the given image onto the diagram.
+            </summary>
+            <param name="fileStrm">Binary stream containing the image.</param>
+            <remarks>
+            This method activates either the BitmapTool or the MetafileTool
+            depending on the type of image passed in.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.BitmapTool"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.MetafileTool"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Cut">
+            <summary>
+            Remove the currently selected nodes from the diagram and move
+            them to the clipboard.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.Cut"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Copy">
+            <summary>
+            Copy the currently selected nodes to the clipboard.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.Copy"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Paste">
+            <summary>
+            Paste the contents of the clipboard to the diagram.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.Paste"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Paste(System.String,System.Drawing.PointF)">
+            <summary>
+            Paste the contents of the clipboard to the diagram at the specified layer and location.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.Paste"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ExecuteCommand(Syncfusion.Windows.Forms.Diagram.ICommand)">
+            <summary>
+            Executes the given command through the controller.
+            </summary>
+            <param name="cmd">Command to execute.</param>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.ExecuteCommand(Syncfusion.Windows.Forms.Diagram.ICommand)"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UndoCommand">
+            <summary>
+            Execute the command on the top of the undo stack and remove it
+            from the stack.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.UndoCommand"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.RedoCommand">
+            <summary>
+            Execute the command on the top of the redo stack and remove it
+            from the stack.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.RedoCommand"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SelectAll">
+            <summary>
+            Adds all nodes in the model to the SelectionList.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controller.SelectAll"/>.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnSelectionListChanged(System.Object,Syncfusion.Windows.Forms.Diagram.NodeCollectionEventArgs)">
+            <summary>
+            Called when the list of selected nodes changes.
+            </summary>
+            <param name="sender"></param>
+            <param name="evtArgs"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SaveSoap(System.IO.Stream)">
+            <summary>
+            Saves the diagram to a stream in SOAP format.
+            </summary>
+            <param name="strmOut">Stream to serialize the diagram into.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SaveSoap(System.String)">
+            <summary>
+            Saves the diagram to a file in SOAP format.
+            </summary>
+            <param name="fileName">Name of file to save to.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadSoap(System.IO.Stream)">
+            <summary>
+            Loads the diagram from a stream in SOAP format.
+            </summary>
+            <param name="strmIn">Stream to serialize the diagram into.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadSoap(System.String)">
+            <summary>
+            Loads the diagram from a file in SOAP format.
+            </summary>
+            <param name="fileName">Name of file to load from.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SaveBinary(System.IO.Stream)">
+            <summary>
+            Saves the diagram to a stream in binary format.
+            </summary>
+            <param name="strmOut">Stream to serialize the diagram into.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SaveBinary(System.String)">
+            <summary>
+            Saves the diagram to a file in binary format.
+            </summary>
+            <param name="fileName">Name of file to save to.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadBinary(System.IO.Stream)">
+            <summary>
+            Loads the diagram from a stream in binary format.
+            </summary>
+            <param name="strmIn">Stream to serialize the diagram from.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadBinary(System.String)">
+            <summary>
+            Loads the diagram from a file in binary format.
+            </summary>
+            <param name="fileName">Name of file to load from.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ExportDiagramAsImage">
+            <summary>
+            Exports a representation of the Diagram as a bitmap image.
+            </summary>
+            <returns>A <see cref="T:System.Drawing.Bitmap"/> value.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreatePrintDocument">
+            <summary>
+            Creates an instance of the <see cref="T:Syncfusion.Windows.Forms.Diagram.DiagramPrintDocument"/> and initializes it 
+            with the diagram's model.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.InitializeScripting">
+            <summary>
+            Creates the ScriptingManager and loads the ScriptSite with objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadScript(System.String)">
+            <summary>
+            Loads the contents of the specified file into the script.
+            </summary>
+            <param name="fileName">Name of file containing the script source.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LoadScript(System.IO.Stream)">
+            <summary>
+            Loads the given stream into the script.
+            </summary>
+            <param name="strm">Stream containing the script source.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CompileScript">
+            <summary>
+            Compiles the script loaded in the ScriptEngine.
+            </summary>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            <para>
+            The <see cref="M:Syncfusion.Scripting.ScriptingManager.OnCompileError(Syncfusion.Scripting.VsaErrorEventArgs)"/>
+            method is called if an error occurs during compilation.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.RunScript">
+            <summary>
+            Runs the script that is compiled in the ScriptEngine.
+            </summary>
+            <remarks>
+            <para>
+            The script must be loaded and compiled before this method is called.
+            An error occurs if the ScriptEngine is already running.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ResetScriptEngine">
+            <summary>
+            Removes the script engine from the running state and disconnects
+            automatically bound event handlers.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CloseScriptEngine">
+            <summary>
+            Closes the script engine and releases all resources. If the script engine
+            is currently running, the IVsaEngine.Reset method is called first.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ClearScriptSite">
+            <summary>
+            Removes all event sources and global instances and is compiled code from the site.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.RegisterEventSource(System.String,System.Object)">
+            <summary>
+            Registers and event source with the site.
+            </summary>
+            <param name="name">Name of the event source.</param>
+            <param name="obj">Event source object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.RegisterGlobalInstance(System.String,System.Object)">
+            <summary>
+            Registers a global instance with the site.
+            </summary>
+            <param name="name">Name of the global instance.</param>
+            <param name="obj">Global instance object.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.InvokeScriptMethod(System.String)">
+            <summary>
+            Invokes the specified method in the script.
+            </summary>
+            <param name="methodName">Name of method to invoke.</param>
+            <returns>Return value of the method.</returns>
+            <remarks>
+            <para>
+            This method throws an InvalidOperationException if the ScriptEngine
+            or Script is NULL. The ScriptEngine must be running to call this
+            method.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelChildrenChanging(System.Object,Syncfusion.Windows.Forms.Diagram.NodeCollectionEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ChildrenChanging"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeCollectionEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelChildrenChangeComplete(System.Object,Syncfusion.Windows.Forms.Diagram.NodeCollectionEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ChildrenChangeComplete"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeCollectionEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelPropertyChanged(System.Object,Syncfusion.Windows.Forms.Diagram.PropertyEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.PropertyChanged"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.PropertyEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelBoundsChanged(System.Object,Syncfusion.Windows.Forms.Diagram.BoundsEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.BoundsChanged"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.BoundsEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMeasurementUnitsChanging(System.Object,Syncfusion.Windows.Forms.Diagram.LogicalUnitsEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MeasurementUnitsChanging"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.LogicalUnitsEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMeasurementScaleChanging(System.Object,Syncfusion.Windows.Forms.Diagram.LogicalScaleEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MeasurementScaleChanging"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.LogicalScaleEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMoved(System.Object,Syncfusion.Windows.Forms.Diagram.MoveEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMoved"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.MoveEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelRotated(System.Object,Syncfusion.Windows.Forms.Diagram.RotateEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeRotated"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.RotateEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelScaled(System.Object,Syncfusion.Windows.Forms.Diagram.ScaleEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeScaled"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.ScaleEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelClick(System.Object,Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeClick"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelDoubleClick(System.Object,Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeDoubleClick"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMouseEnter(System.Object,Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMouseEnter"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMouseLeave(System.Object,Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMouseLeave"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelInsertVertex(System.Object,Syncfusion.Windows.Forms.Diagram.VertexEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeInsertVertex"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.VertexEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelMoveVertex(System.Object,Syncfusion.Windows.Forms.Diagram.VertexEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMoveVertex"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.VertexEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelDeleteVertex(System.Object,Syncfusion.Windows.Forms.Diagram.VertexEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeDeleteVertex"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.VertexEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelConnectionsChanging(System.Object,Syncfusion.Windows.Forms.Diagram.ConnectionCollectionEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ConnectionsChanging"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.ConnectionCollectionEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelConnectionsChangeComplete(System.Object,Syncfusion.Windows.Forms.Diagram.ConnectionCollectionEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ConnectionsChangeComplete"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.ConnectionCollectionEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnModelControlNodeInfo(System.Object,Syncfusion.Windows.Forms.Diagram.ControlNodeEventArgs)">
+            <summary>
+            Raises the <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ControlNodeInfo"/> event.
+            </summary>
+            <param name="sender">The object generating the event.</param>
+            <param name="evtArgs">A <see cref="T:Syncfusion.Windows.Forms.Diagram.ControlNodeEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnLayoutUpdated(System.Object,System.EventArgs)">
+            <summary>
+            Called after the layout manager updates the model.
+            </summary>
+            <param name="sender">Layout manager sending the event.</param>
+            <param name="evtArgs">Event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnHScroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Called when the horizontal scrollbar is moved.
+            </summary>
+            <param name="sender">Object sending the event.</param>
+            <param name="se">Event arguments.</param>
+            <remarks>
+            Scrolls the window origin by the specified amount.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnHScrollBarValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the value of the horizontal scroll bar changes.
+            </summary>
+            <param name="sender">Object sending the event.</param>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Updates the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.View.Origin"/>
+            property of the view.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnVScroll(System.Object,System.Windows.Forms.ScrollEventArgs)">
+            <summary>
+            Called when the vertical scrollbar is moved.
+            </summary>
+            <param name="sender">Object sending the event.</param>
+            <param name="se">Event arguments.</param>
+            <remarks>
+            Scrolls the window origin by the specified amount.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnVScrollBarValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the value of the vertical scroll bar changes.
+            </summary>
+            <param name="sender">Object sending the event.</param>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Updates the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.View.Origin"/>
+            property of the view.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragEnter(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Called when the mouse enters the diagram during a drag operation.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Looks to see if a
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeCollection"/> is
+            available in the System.Windows.Forms.IDataObject provided in the
+            event arguments. If so, the aggregate bounds of the nodes is
+            calculated and a tracking rectangle is created to track the nodes
+            as they are dragged across the diagram.
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragDrop(System.Windows.Forms.DragEventArgs)"/>
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragLeave(System.EventArgs)"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragDrop(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Called when objects are dropped onto the diagram.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Looks to see if a
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.NodeCollection"/> is
+            available in the System.Windows.Forms.IDataObject provided in the
+            event arguments. If so, the NodeCollection is retrieved and
+            added to the diagram using a
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.InsertNodesCmd"/>
+            command.
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragEnter(System.Windows.Forms.DragEventArgs)"/>
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragLeave(System.EventArgs)"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragLeave(System.EventArgs)">
+            <summary>
+            Called when mouse leaves the diagram during a drag operation.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Clears the tracking rectangle.
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragEnter(System.Windows.Forms.DragEventArgs)"/>
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragDrop(System.Windows.Forms.DragEventArgs)"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnDragOver(System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Called when objects are dragged over the control.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Updates tracking when objects are dragged over the diagram.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MVCInit">
+            <summary>
+            Wires up the model, view, and controller and performs necessary initialization.
+            </summary>
+            <remarks>
+            This method does not create the model, view, and controller objects. It assumes
+            that the mode, view, and controller objects have already been created.
+            This method hooks the model to the view and hooks the view to the
+            controller.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MVCDispose">
+            <summary>
+            Destroys the model, view, and controller and ensures that they are completely
+            disconnected from the diagram control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.HookModelEvents">
+            <summary>
+            Hooks up event handlers to the model.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UnhookModelEvents">
+            <summary>
+            Unhooks event handlers from the model.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.HookViewEvents">
+            <summary>
+            Hooks up event handlers to the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UnhookViewEvents">
+            <summary>
+            Unhooks event handlers from the view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.HookControllerEvents">
+            <summary>
+            Hooks up event handlers to the controller.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UnhookControllerEvents">
+            <summary>
+            Unhooks event handlers from the controller.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.UpdateScrollRange">
+            <summary>
+            This method sets the range on the horizontal and vertical scrollbars.
+            </summary>
+            <remarks>
+            The scroll range for the scrollbars is determined by the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.View.VirtualSize"/> property
+            of the view and the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScrollGranularity"/>
+            property.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Called when the control needs to paint the window.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            This method draws the view onto the System.Drawing.Graphics
+            object provided by the System.Windows.Forms.PaintEventArgs
+            parameter. The view is drawn by calling the
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.View.Draw"/>
+            method.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Called when the control needs to clear the background.
+            </summary>
+            <param name="pevent">Event arguments.</param>
+            <remarks>
+            This method does nothing. It is overridden to prevent the
+            control from painting the background in order to eliminate
+            flicker.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnResize(System.EventArgs)">
+            <summary>
+            Called when the control is resized.
+            </summary>
+            <param name="e">Event arguments.</param>
+            <remarks>
+            Updates the size of the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.View"/>
+            to match the new size of the control.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnToolActivate(System.Object,Syncfusion.Windows.Forms.Diagram.Controller.ToolEventArgs)">
+            <summary>
+            Called when a tool is activated by the controller.
+            </summary>
+            <param name="sender">Controller activating the tool.</param>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            If there is a context menu associated with the diagram, this method
+            detaches it. The reason is that the context menu can interfere with
+            the behavior of some tools. When the tool is deactivated, the context
+            menu is restored.
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnToolDeactivate(System.Object,Syncfusion.Windows.Forms.Diagram.Controller.ToolEventArgs)"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnToolDeactivate(System.Object,Syncfusion.Windows.Forms.Diagram.Controller.ToolEventArgs)">
+            <summary>
+            Called when a tool is deactivated by the controller.
+            </summary>
+            <param name="sender">Controller deactivating the tool.</param>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            If the context menu was disabled when the tool was activated, this
+            method restores it.
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.OnToolActivate(System.Object,Syncfusion.Windows.Forms.Diagram.Controller.ToolEventArgs)"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Model">
+            <summary>
+            The model contains the hierarchy of graphical nodes that are rendered
+            onto the view and manipulated by the controller.
+            </summary>
+            <remarks>
+            The model contains the data portion of a diagram. When a diagram is
+            persisted, it is the Model that is serialized. The model is created
+            by calling the virtual method
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateModel"/>.
+            The CreateModel method can be overridden in derived classes in order to
+            plug custom models into the diagram.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Model"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.View">
+            <summary>
+            The view is responsible for rendering the model onto a window.
+            </summary>
+            <remarks>
+            A view is set inside of a window and has bounds that are measured
+            in device coordinates. The view renders itself onto a
+            System.Drawing.Graphics object. The view is created by calling the
+            virtual method
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateView"/>.
+            The CreateView method can be overridden in derived classes in order to
+            plug custom views into the diagram.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.View"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Controller">
+            <summary>
+            The controller processes input and translates it into commands and actions
+            on the model and view.
+            </summary>
+            <remarks>
+            The controller defines the user interface. It is created by calling the
+            virtual method's
+            <see cref="M:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CreateController"/>.
+            The CreateController method can be overridden in derived classes in order to
+            plug custom controllers into the diagram.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LayoutManager">
+            <summary>
+            Layout manager responsible for updating the layout of the diagram.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.LineRouter">
+            <summary>
+            Line router responsible for routing lines in the diagram.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScrollGranularity">
+            <summary>
+            Determines the level of granularity for scrolling.
+            </summary>
+            <remarks>
+            This value is to scale the scroll range of the scroll bars. The value
+            of this property must be greater than 0. This value is multiplied by
+            virtual size of the view in order to get the scroll range. For example,
+            if the virtual size of the view is 100x50 and this property is set to
+            0.5f, then the horizontal scroll range is set to 0..50 and the vertical
+            scroll range is set to 0..25.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NudgeIncrement">
+            <summary>
+            Number of logical units to move nodes during a nudge operation.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SelectionChanged">
+            <summary>
+            Fires when the list of selected nodes changes.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ChildrenChanging">
+            <summary>
+            Fired before the collection of child nodes is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ChildrenChangeComplete">
+            <summary>
+            Fired after the collection of child nodes is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.PropertyChanged">
+            <summary>
+            Fired when a property of the model or a child node is changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.BoundsChanged">
+            <summary>
+            Fired when the bounds of the model or a child node change.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MeasurementUnitsChanging">
+            <summary>
+            Fired when the logical unit of measure changes.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.MeasurementScaleChanging">
+            <summary>
+            Fired when the scale of logical units changes.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMoved">
+            <summary>
+            Fired when a child node is moved.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeRotated">
+            <summary>
+            Fired when a child node is rotated.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeScaled">
+            <summary>
+            Fired when a child node is scaled.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeClick">
+            <summary>
+            Fired when a child node is single clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeDoubleClick">
+            <summary>
+            Fired when a child node is double clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMouseEnter">
+            <summary>
+            Fired when the mouse enters a child node.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMouseLeave">
+            <summary>
+            Fired when the mouse leaves a child node.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeInsertVertex">
+            <summary>
+            Fired when a vertex is inserted into a child node.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeMoveVertex">
+            <summary>
+            Fired when a vertex belonging to a child node is moved.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NodeDeleteVertex">
+            <summary>
+            Fired when a vertex belonging to a child node is deleted.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ConnectionsChanging">
+            <summary>
+            Fired before a change is made to the connection list of a symbol.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ConnectionsChangeComplete">
+            <summary>
+            Fired after a change is made to the connection list of a symbol.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CompileError">
+            <summary>
+            Fired when an error occurs during compilation.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScriptChanged">
+            <summary>
+            Fired when the script changes.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ControlNodeInfo">
+            <summary>
+            Fired when a <see cref="T:Syncfusion.Windows.Forms.Diagram.ControlNode"/> requires information for the 
+            Windows Forms Control that it hosts.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CanCut">
+            <summary>
+            Indicates if there are any selected nodes that can be removed from the
+            the model.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controller.CanCut"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CanCopy">
+            <summary>
+            Indicates if there are any selected nodes that can be copied to the clipboard.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controller.CanCopy"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CanPaste">
+            <summary>
+            Indicates if there is any data in the clipboard that can be pasted
+            into the model.
+            </summary>
+            <remarks>
+            Wrapper for
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controller.CanPaste"/>.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CanUndo">
+            <summary>
+            Indicates if there are any commands to undo.
+            </summary>
+            <remarks>
+            Checks the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controller.UndoCount"/>
+            to see if it is greater than 0.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.CanRedo">
+            <summary>
+            Indicates if there are any commands to redo.
+            </summary>
+            <remarks>
+            Checks the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controller.RedoCount"/>
+            to see if it is greater than 0.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.SelectionList">
+            <summary>
+            List of currently selected nodes.
+            </summary>
+            <remarks>
+            Provides access to the controller's selection list.
+            <seealso cref="P:Syncfusion.Windows.Forms.Diagram.Controller.SelectionList"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScriptingManager">
+            <summary>
+            Scripting manager that contains the script engine, script, and script site
+            for compiling and executing scripts.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScriptEngine">
+            <summary>
+            The ScriptEngine compiles and executes the script.
+            </summary>
+            <remarks>
+            <para>
+            Each language uses a different ScriptEngine. The
+            <see cref="T:Syncfusion.Scripting.ScriptEngineFactory"/> creates the
+            appropriate ScriptEngine for a given language. New or alternate
+            ScriptEngines can be registered with the
+            <see cref="T:Syncfusion.Scripting.ScriptEngineFactory"/>.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Script">
+            <summary>
+            The <see cref="T:Syncfusion.Scripting.Script"/> object hosted by the diagram control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.ScriptSite">
+            <summary>
+            The ScriptSite provides for host-implemented callbacks, describes interaction between
+            the engine and the host's object model, and allows the reporting of compilation errors.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.IsScriptCompiled">
+            <summary>
+            Indicates if the script has been loaded and compiled in the script engine.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.IsScriptRunning">
+            <summary>
+            Indicates if the script engine is currently running the script.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.NeedToCompileScript">
+            <summary>
+            Indicates if the script needs to be compiled.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.DiagramScriptSite">
+            <summary>
+            Implements the ScriptSite for a Diagram.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.DiagramScriptSite.#ctor(Syncfusion.Windows.Forms.Diagram.Controls.Diagram)">
+            <summary>
+            Construct a ScriptSite for the specified diagram.
+            </summary>
+            <param name="diagram">Diagram to attach to script site.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.DiagramScriptSite.GetEventSourceInstance(System.String,System.String)">
+            <summary>
+            Gets a reference to an event source previously added to a script engine using
+            the IVsaCodeItem.AddEventSource method.
+            </summary>
+            <param name="itemName"></param>
+            <param name="eventSourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.DiagramScriptSite.GetGlobalInstance(System.String)">
+            <summary>
+            Gets a reference to a global item, such as the host-provided application object.
+            </summary>
+            <param name="globInstanceName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl">
+            <summary>
+            <para>
+            The OverviewControl class implements an overview window that provides a perpective view of the diagram model. 
+            The OverviewControl is initialized with a diagram model and a view, and upon display renders a view 
+            of the diagram that is scaled to the control's bounds.
+            </para>
+            <para>
+            The control has a Viewport window that is positioned over the diagram display and can be moved and / or resized 
+            using the mouse to dynamically change the view transform that maps the diagram's world coordinates onto the 
+            view coordinates. The viewport's origin corresponds to the origin of the diagram's view and moving the viewport 
+            will shift the view's origin by an equivalent extent. The viewport's size is proportional to the view's 
+            magnification and resizing the viewport allows the view to be zoomed in and out.
+            </para>
+            <seealso cref="P:Syncfusion.Windows.Forms.Diagram.View.Origin"/>
+            <seealso cref="P:Syncfusion.Windows.Forms.Diagram.View.Magnification"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.#ctor">
+            <summary>
+            Creates the OverviewControl.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.DrawViewport(System.Drawing.Graphics)">
+            <summary>
+            Draws the <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl"/>'s viewport rectangle.
+            </summary>
+            <param name="grfx">A <see cref="T:System.Drawing.Graphics"/> object</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <override/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.Dispose(System.Boolean)">
+            <override/>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.Model">
+            <summary>
+            Gets / sets the <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.Model"/> that the <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl"/> is initialized with.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.View">
+            <summary>
+            Gets / sets the <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.View"/> that the <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl"/> is tied to.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.ViewportBounds">
+            <summary>
+            Gets / sets the bounds of the OverviewControl's Viewport window.
+            </summary>
+            <remarks>
+            The Viewport window location and size relative to the <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl"/>'s diagram display 
+            determine the <see cref="!:Diagram.View.Origin"/> and <see cref="!:Diagram.View.Magnification"/> property values 
+            for the diagram's <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.Diagram.View"/>.
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg">
+            <summary>
+            Form used to prompt the user for the name of new symbol palettes.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar"/>
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg.PaletteName">
+            <summary>
+            Name for the new palette entered by the user.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar">
+            <summary>
+            Displays a collection of symbol palettes that the symbol models contain
+            in a GroupBar control.
+            </summary>
+            <remarks>
+            <para>
+            This class is derived from Syncfusion.Windows.Forms.Tools.GroupBar and
+            provides an implementation for displaying symbol palettes and the symbol
+            models they contain. Each symbol palette corresponds to a single panel
+            (i.e. GroupView) inside of the GroupBar. Each entry in a panel corresponds
+            to a symbol model inside of a symbol palette.
+            </para>
+            <para>
+            The user interface looks and behaves like an Outlook bar. Each symbol
+            palette is a list of symbols that have an icon and a label. If the
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.EditMode"/>
+            flag is False, the PaletteGroupBar allows symbols to be dragged from
+            this control onto diagrams.
+            </para>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolModel"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.#ctor">
+            <summary>
+            Construct a PaletteGroupBar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.Clear">
+            <summary>
+            Removes all symbol palettes from the GroupBar.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.AddPalette(Syncfusion.Windows.Forms.Diagram.SymbolPalette)">
+            <summary>
+            Adds an existing symbol palette to the GroupBar.
+            </summary>
+            <param name="palette">Symbol palette to add.</param>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.AddPalette(System.String)">
+            <summary>
+            Adds a new symbol palette to the GroupBar with the given name.
+            </summary>
+            <param name="paletteName">Name of symbol palette to create.</param>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.AddPalette">
+            <summary>
+            Adds a new symbol palette to the GroupBar after prompting the user for
+            the name of the new symbol palette to create.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteAddDlg"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.LoadPalette(System.String)">
+            <summary>
+            Loads a symbol palette from disk and adds it to the group bar.
+            </summary>
+            <param name="fileName">Name of symbol palette file to load.</param>
+            <returns>PaletteGroupView created to hold the symbol palette.</returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.GetPalette(System.Int32)">
+            <summary>
+            Returns the symbol palette at the given index.
+            </summary>
+            <param name="paletteIdx">Zero-based index into the collection of symbol palettes loaded into the GroupBar control.</param>
+            <returns>SymbolPalette object or NULL if paletteIdx parameter is out of range.</returns>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.SelectSymbolModel(System.String)">
+            <summary>
+            Set the selected symbol model to the one matching the given symbol model name.
+            </summary>
+            <param name="symbolName">Name of symbol model to select.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.OnSymbolModelDoubleClick(System.Object,Syncfusion.Windows.Forms.Diagram.Controls.SymbolModelEventArgs)">
+            <summary>
+            Internal event handler that is wired to the GroupView.DoubleClick event.
+            </summary>
+            <param name="sender">Object that sent the event.</param>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            This event handler fires the SymbolModelDoubleClick event.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.EditMode">
+            <summary>
+            Determines whether or not the symbols can be dragged from the palette
+            onto a diagram.
+            </summary>
+            <remarks>
+            <para>
+            When this property is set to True, the palette is being edited and symbols
+            cannot be dragged onto a diagram. The Symbol Designer sets this flag to True.
+            The typical setting for an application is False, which means that the palette
+            is not being edited and symbols may be dragged onto a diagram.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.CurrentPalette">
+            <summary>
+            The currently selected symbol palette.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.PaletteCount">
+            <summary>
+            The number of symbol palettes loaded in the GroupBar control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.SelectedSymbolModel">
+            <summary>
+            Returns the currently selected symbol model.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolModel"/>
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.SymbolModelSelected">
+            <summary>
+            Fired when the user selects a symbol model icon in a PaletteGroupBar component.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.SymbolModelDoubleClick">
+            <summary>
+            Fired when the user double clicks a symbol model icon in a PaletteGroupBar component.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView">
+            <summary>
+            Displays the symbol models belonging to a symbol palette in a GroupView.
+            </summary>
+            <remarks>
+            <para>
+            This class is derived from the Syncfusion.Windows.Forms.Tools.GroupView
+            class. A GroupView is a control that contains a list of icons and labels
+            that can be hosted in a GroupBar (Outlook bar).
+            </para>
+            <para>
+            This class provides an implementation that displays a list of symbol models
+            that belong to a given symbol palette. Symbol models can be dragged from
+            this control onto diagrams.
+            </para>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolModel"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.LoadPalette(System.String)">
+            <summary>
+            Loads a symbol palette from a file.
+            </summary>
+            <param name="filename">Name of file to load.</param>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            Deserializes a symbol palette from disk and loads it into this
+            control.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.LoadPalette(Syncfusion.Windows.Forms.Diagram.SymbolPalette)">
+            <summary>
+            Loads the given symbol palette into this control.
+            </summary>
+            <param name="palette">Palette to load.</param>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.LoadPalette(System.Reflection.Assembly,System.String,System.String)">
+            <summary>
+            Loads a symbol palette from a resource file.
+            </summary>
+            <param name="assembly">Assembly containing the symbol palette.</param>
+            <param name="baseName">Base name of resource.</param>
+            <param name="resName">Name of resource.</param>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.LoadPalette(System.Byte[])">
+            <summary>
+            Loads a symbol palette from memory.
+            </summary>
+            <param name="strmData">Array of bytes containing serialized symbol palette.</param>
+            <returns>True if successful; otherwise False.</returns>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SelectSymbolModel(System.String)">
+            <summary>
+            Set the selected symbol model to the one matching the given symbol
+            model name.
+            </summary>
+            <param name="symbolName">Name of symbol model to select.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.AddLargeIcon(System.Drawing.Image)">
+            <summary>
+            Adds a large icon to the image list.
+            </summary>
+            <param name="lgIcon">Icon to add.</param>
+            <returns>Index position at which the icon was added.</returns>
+            <remarks>
+            <para>
+            This control maintains two image lists - one for large icons and one
+            for small icons.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.AddSmallIcon(System.Drawing.Image)">
+            <summary>
+            Adds a small icon to the image list.
+            </summary>
+            <param name="smIcon">Icon to add.</param>
+            <returns>Index position at which the icon was added.</returns>
+            <remarks>
+            <para>
+            This control maintains two image lists - one for large icons and one
+            for small icons.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnGroupViewItemSelected(System.EventArgs)">
+            <summary>
+            Called when an item is selected.
+            </summary>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            Fires the
+            <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SymbolModelSelected"/>
+            event.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnDoubleClick(System.EventArgs)">
+            <summary>
+            Called when an item is double clicked.
+            </summary>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            Fires the
+            <see cref="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SymbolModelDoubleClick"/>
+            event.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Called when a mouse down event is received.
+            </summary>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            <para>
+            If <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.EditMode"/>
+            is enabled, then this method starts a drag-and-drop operation.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Called when a mouse move event is received.
+            </summary>
+            <param name="evtArgs">Event arguments.</param>
+            <remarks>
+            <para>
+            If a drag-and-drop operation has been started with a mouse down, this
+            method calls the System.Windows.Forms.Control.DoDragDrop method.
+            </para>
+            <seealso cref="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnMouseDown(System.Windows.Forms.MouseEventArgs)"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Called when a mouse up event is received.
+            </summary>
+            <param name="evtArgs">Event arguments.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.EditMode">
+            <summary>
+            Determines whether or not the symbols can be dragged from the palette
+            onto a diagram.
+            </summary>
+            <remarks>
+            <para>
+            When this property is set to True, the palette is being edited and symbols
+            cannot be dragged onto a diagram. The Symbol Designer sets this flag to True.
+            The typical setting for an application is False, which means that the palette
+            is not being edited and symbols may be dragged onto a diagram.
+            </para>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.Palette">
+            <summary>
+            Reference to the symbol palette displayed by this control.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SelectedSymbolModel">
+            <summary>
+            Returns the currently selected symbol model.
+            </summary>
+            <remarks>
+            Symbol models are the items displayed by this control. This
+            property returns the one that is currently selected.
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolModel"/>
+            </remarks>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SymbolModelSelected">
+            <summary>
+            Fired when the user selects a symbol model icon in a PaletteGroupBar component.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.SymbolModelDoubleClick">
+            <summary>
+            Fired when the user double clicks a symbol model icon in a PaletteGroupBar component.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.GroupViewPaletteItem">
+            <summary>
+            GroupViewItem derived class representing a symbol model in a group view.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolModel"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.GroupViewPaletteItem.#ctor(Syncfusion.Windows.Forms.Diagram.SymbolModel)">
+            <summary>
+            Construct a GroupViewPaletteItem given a symbol model.
+            </summary>
+            <param name="symModel">Symbol model to display in the group view.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.GroupViewPaletteItem.#ctor(Syncfusion.Windows.Forms.Diagram.SymbolModel,System.Int32)">
+            <summary>
+            Construct a GroupViewPaletteItem given a symbol model.
+            </summary>
+            <param name="symModel">Symbol model to display in the group view.</param>
+            <param name="imageIdx"></param>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupViewCodeDOMSerializer">
+            <summary>
+            Serializes a PaletteGroupView to the code DOM.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupViewCodeDOMSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+            <summary>
+            Serializes a PaletteGroupView object to the code DOM.
+            </summary>
+            <param name="manager"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupViewCodeDOMSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+            <summary>
+            Deserializes a PaletteGroupView object from the code DOM.
+            </summary>
+            <param name="manager"></param>
+            <param name="codeObject"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteOpener">
+            <summary>
+            This class implements a design-time editor for opening a file containing
+            a symbol palette.
+            </summary>
+            <remarks>
+            <para>
+            This class is used by the PaletteGroupView to allow the user to load a
+            symbol palette from the disk. This class can be used as the design-time editor
+            for any property of type SymbolPalette using the following code:
+            <code>
+            [Editor(typeof(PaletteOpener), typeof(System.Drawing.Design.UITypeEditor))]
+            </code>
+            </para>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView"/>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteOpener.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PaletteOpener.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor">
+            <summary>
+            This control displays and edits properties of objects in a diagram.
+            </summary>
+            <remarks>
+            <para>
+            This control contains an embedded System.Windows.Forms.PropertyGrid
+            that is used to edit objects in a diagram. The
+            <see cref="P:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.Diagram"/>
+            contains a reference to a
+            <see cref="T:Syncfusion.Windows.Forms.Diagram.Controls.Diagram"/>
+            object that the property editor is attached to. Once it is attached to
+            a diagram, the property editor automatically displays the currently
+            selected object in the diagram.
+            </para>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.Controls.Diagram"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.SetSelectedObjects(Syncfusion.Windows.Forms.Diagram.NodeCollection)">
+            <summary>
+            Selects the list of nodes in the property grid.
+            </summary>
+            <param name="nodes">Nodes to display in the property editor.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.SetSelectedObject(Syncfusion.Windows.Forms.Diagram.INode)">
+            <summary>
+            Select the node in the property grid.
+            </summary>
+            <param name="node">Node to display in the property editor.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.PropertyGrid">
+            <summary>
+            Reference to the PropertyGrid object contained by this property editor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.Diagram">
+            <summary>
+            Diagram the property editor is attached to.
+            </summary>
+            <remarks>
+            <para>
+            This property contains a reference to the Diagram that this property
+            editor is attached to. The property editor receives events from the
+            diagram when the current selection changes and it updates the currently
+            displayed object in the property editor.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.SymbolModelEventArgs">
+            <summary>
+            Event argument class for events associated with symbol models loaded
+            in a PaletteGroupBar object.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.SymbolModelEventArgs.#ctor(Syncfusion.Windows.Forms.Diagram.SymbolModel)">
+            <summary>
+            Constructs a SymbolModelEventArgs object from a SymbolModel.
+            </summary>
+            <param name="symbolMdl"></param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.Controls.SymbolModelEventArgs.Model">
+            <summary>
+            The SymbolModel that generated the event.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.SymbolModelEvent">
+            <summary>
+            Delegate for events associated with symbol models loaded
+            in a PaletteGroupBar object.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.Controls.SymbolPaletteConverter">
+            <summary>
+            Type converter for a SymbolPalette.
+            </summary>
+            <remarks>
+            <seealso cref="T:Syncfusion.Windows.Forms.Diagram.SymbolPalette"/>
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.SymbolPaletteConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts a SymbolPalette to other data types.
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.Controls.SymbolPaletteConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Converts a SymbolPalette from other types.
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.DropPosition">
+            <summary>
+            Specifies how the nodes are positioned when dropped onto the diagram.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Diagram.DropPosition.RelativeOffset">
+            <summary>
+            Nodes are positioned related to the location of the drop.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Diagram.DropPosition.AbsolutePosition">
+            <summary>
+            Positions each node at the location of the drop.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Diagram.DragDropData">
+            <summary>
+            Encapsulates data needed to drag-and-drop a collection of nodes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.DragDropData.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.DragDropData.#ctor(Syncfusion.Windows.Forms.Diagram.INode)">
+            <summary>
+            Construct a DragDropData object given a single node.
+            </summary>
+            <param name="node">Node to drag-and-drop.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.DragDropData.#ctor(Syncfusion.Windows.Forms.Diagram.INode,Syncfusion.Windows.Forms.Diagram.DropPosition)">
+            <summary>
+            Construct a DragDropData object given a single node and DropPosition mode.
+            </summary>
+            <param name="node">Node to drag-and-drop.</param>
+            <param name="dropPos">Determines how the node is dropped onto the diagram.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.DragDropData.#ctor(Syncfusion.Windows.Forms.Diagram.INodeCollection)">
+            <summary>
+            Construct a DragDropData object given a collection of nodes.
+            </summary>
+            <param name="nodes">Nodes to drag-and-drop.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Diagram.DragDropData.#ctor(Syncfusion.Windows.Forms.Diagram.INodeCollection,Syncfusion.Windows.Forms.Diagram.DropPosition)">
+            <summary>
+            Construct a DragDropData object given a collection of nodes and DropPosition mode.
+            </summary>
+            <param name="nodes">Nodes to drag-and-drop.</param>
+            <param name="dropPos">Determines how the node is dropped onto the diagram.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.DragDropData.Nodes">
+            <summary>
+            Collection of nodes to drag-and-drop.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Diagram.DragDropData.DropPosition">
+            <summary>
+            Determines how the nodes are positioned on the diagram.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.CallBack">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.BrowserFolderCallback">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.HIWORD(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.LOWORD(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.LOWORD(System.IntPtr)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.HIWORD(System.IntPtr)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.MAKELONG(System.Int32,System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.MAKELPARAM(System.Int32,System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.RGBToCOLORREF(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.COLORREFToRGB(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.GetRValue(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.GetGValue(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Runtime.InteropServices.WinAPI.Macros.GetBValue(System.Int32)">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.POINT">
+            <internalonly/>	
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.SIZE">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.RECT">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.COMRECT">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.Window.HookProc">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.Runtime.InteropServices.WinAPI.Window.DrawStateProc">
+            <internalonly/>
+        </member>
+        <member name="T:Syncfusion.DiagramWindowsAssembly">
+            <summary>
+            This class holds the name of the Syncfusion.Diagram.Windows assembly and provides a helper 
+            routine that helps with resolving types when loading a serialization stream and when 
+            the framework probes for assemblies by reflection. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.DiagramWindowsAssembly.Name">
+            <summary>
+            The full name of this assembly without version information: "Syncfusion.Diagram.Windows"
+            </summary>
+        </member>
+        <member name="F:Syncfusion.DiagramWindowsAssembly.Assembly">
+            <summary>
+            A reference to the <see cref="T:System.Reflection.Assembly"/> for the grid assembly.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.DiagramWindowsAssembly.RootNamespace">
+            <summary>
+            The root namespace of this assembly. Used internally for locating resources within the assembly.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.DiagramWindowsAssembly.Binder">
+            The Binder class helps with the resolution of Diagram types between different versions of 
+            the Syncfusion assemblies.
+            <internalonly/>
+        </member>
+    </members>
+</doc>

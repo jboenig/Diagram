@@ -1,0 +1,3229 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:SymbolPalette id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-4">Electrical Symbols</name>
+<propertyValues href="#ref-5"/>
+<parent xsi:type="xsd:anyType" xsi:null="1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-6"/>
+<layers href="#ref-7"/>
+<defaultLayer href="#ref-8"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+</a1:SymbolPalette>
+<a2:Hashtable id="ref-5" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>80</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-9"/>
+<Values href="#ref-10"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-6" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-11"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-7" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-12"/>
+<propertyContainer href="#ref-1"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-7"/>
+<propertyValues href="#ref-13"/>
+<members href="#ref-14"/>
+</a1:Layer>
+<SOAP-ENC:Array id="ref-9" SOAP-ENC:arrayType="xsd:anyType[26]">
+<item id="ref-15" xsi:type="SOAP-ENC:string">LineMiterLimit</item>
+<item id="ref-16" xsi:type="SOAP-ENC:string">LineDashCap</item>
+<item id="ref-17" xsi:type="SOAP-ENC:string">LineDashOffset</item>
+<item id="ref-18" xsi:type="SOAP-ENC:string">RevealPorts</item>
+<item id="ref-19" xsi:type="SOAP-ENC:string">LineEndCap</item>
+<item id="ref-20" xsi:type="SOAP-ENC:string">FillTextureWrapMode</item>
+<item id="ref-21" xsi:type="SOAP-ENC:string">LineColor</item>
+<item id="ref-22" xsi:type="SOAP-ENC:string">AllowResize</item>
+<item id="ref-23" xsi:type="SOAP-ENC:string">LineWidth</item>
+<item id="ref-24" xsi:type="SOAP-ENC:string">AllowSelect</item>
+<item id="ref-25" xsi:type="SOAP-ENC:string">AllowRotate</item>
+<item id="ref-26" xsi:type="SOAP-ENC:string">Enabled</item>
+<item id="ref-27" xsi:type="SOAP-ENC:string">LineJoin</item>
+<item id="ref-28" xsi:type="SOAP-ENC:string">LineDashStyle</item>
+<item id="ref-29" xsi:type="SOAP-ENC:string">FillColor</item>
+<item id="ref-30" xsi:type="SOAP-ENC:string">LineHitTestPadding</item>
+<item id="ref-31" xsi:type="SOAP-ENC:string">AllowMove</item>
+<item id="ref-32" xsi:type="SOAP-ENC:string">Visible</item>
+<item id="ref-33" xsi:type="SOAP-ENC:string">BackgroundType</item>
+<item id="ref-34" xsi:type="SOAP-ENC:string">BackgroundColor</item>
+<item id="ref-35" xsi:type="SOAP-ENC:string">FillTexture</item>
+<item id="ref-36" xsi:type="SOAP-ENC:string">GradientBounds</item>
+<item id="ref-37" xsi:type="SOAP-ENC:string">GradientAngle</item>
+<item id="ref-38" xsi:type="SOAP-ENC:string">FillType</item>
+<item id="ref-39" xsi:type="SOAP-ENC:string">GradientStartColor</item>
+<item id="ref-40" xsi:type="SOAP-ENC:string">AllowVertexEdit</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-10" SOAP-ENC:arrayType="xsd:anyType[26]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-11" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-41"/>
+<_size>6</_size>
+<_version>6</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-12" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-42"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-13" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>10</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-43"/>
+<Values href="#ref-44"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-14" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-45"/>
+<_size>6</_size>
+<_version>6</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-41" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-46"/>
+<item href="#ref-47"/>
+<item href="#ref-48"/>
+<item href="#ref-49"/>
+<item href="#ref-50"/>
+<item href="#ref-51"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-42" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-8"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-43" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-52" xsi:type="SOAP-ENC:string">Name</item>
+<item href="#ref-26"/>
+<item href="#ref-32"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-44" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-53" xsi:type="SOAP-ENC:string">Default</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-45" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-46"/>
+<item href="#ref-47"/>
+<item href="#ref-48"/>
+<item href="#ref-49"/>
+<item href="#ref-50"/>
+<item href="#ref-51"/>
+</SOAP-ENC:Array>
+<a1:SymbolModel id="ref-46" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-54">Diode</name>
+<propertyValues href="#ref-55"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-56"/>
+<layers href="#ref-57"/>
+<defaultLayer href="#ref-58"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly id="ref-59">Syncfusion.Diagram</pluginAssembly>
+<pluginClass id="ref-60">Syncfusion.Windows.Forms.Diagram.Symbol</pluginClass>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-61"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a1:SymbolModel id="ref-47" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-62">Resistor</name>
+<propertyValues href="#ref-63"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-64"/>
+<layers href="#ref-65"/>
+<defaultLayer href="#ref-66"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly href="#ref-59"/>
+<pluginClass href="#ref-60"/>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-67"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a1:SymbolModel id="ref-48" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-68">Capacitor</name>
+<propertyValues href="#ref-69"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-70"/>
+<layers href="#ref-71"/>
+<defaultLayer href="#ref-72"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly id="ref-73">Syncfusion.Diagram</pluginAssembly>
+<pluginClass id="ref-74">Syncfusion.Windows.Forms.Diagram.Symbol</pluginClass>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-75"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a1:SymbolModel id="ref-49" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-76">Ground</name>
+<propertyValues href="#ref-77"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-78"/>
+<layers href="#ref-79"/>
+<defaultLayer href="#ref-80"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly href="#ref-73"/>
+<pluginClass href="#ref-74"/>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-81"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a1:SymbolModel id="ref-50" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-82">Power</name>
+<propertyValues href="#ref-83"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-84"/>
+<layers href="#ref-85"/>
+<defaultLayer href="#ref-86"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly id="ref-87">Syncfusion.Diagram</pluginAssembly>
+<pluginClass id="ref-88">Syncfusion.Windows.Forms.Diagram.Symbol</pluginClass>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-89"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a1:SymbolModel id="ref-51" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-90">Voltage</name>
+<propertyValues href="#ref-91"/>
+<parent href="#ref-1"/>
+<bounds xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>816</width>
+<height>1056</height>
+</bounds>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<children href="#ref-92"/>
+<layers href="#ref-93"/>
+<defaultLayer href="#ref-94"/>
+<measurementUnits xsi:type="a4:GraphicsUnit" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Pixel</measurementUnits>
+<measurementScale>1</measurementScale>
+<pluginAssembly href="#ref-87"/>
+<pluginClass href="#ref-88"/>
+<smallIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<largeIcon xsi:type="xsd:anyType" xsi:null="1"/>
+<labels href="#ref-95"/>
+<centerPortEnabled>true</centerPortEnabled>
+</a1:SymbolModel>
+<a2:Hashtable id="ref-55" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>84</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-96"/>
+<Values href="#ref-97"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-56" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-98"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-57" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-99"/>
+<propertyContainer href="#ref-46"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-58" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-57"/>
+<propertyValues href="#ref-100"/>
+<members href="#ref-101"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-61" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-102"/>
+</a1:LabelCollection>
+<a2:Hashtable id="ref-63" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>84</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-103"/>
+<Values href="#ref-104"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-64" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-105"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-65" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-106"/>
+<propertyContainer href="#ref-47"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-66" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-65"/>
+<propertyValues href="#ref-107"/>
+<members href="#ref-108"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-67" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-109"/>
+</a1:LabelCollection>
+<a2:Hashtable id="ref-69" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>57</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-110"/>
+<Values href="#ref-111"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-70" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-112"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-71" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-113"/>
+<propertyContainer href="#ref-48"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-72" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-71"/>
+<propertyValues href="#ref-114"/>
+<members href="#ref-115"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-75" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-116"/>
+</a1:LabelCollection>
+<a2:Hashtable id="ref-77" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>57</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-117"/>
+<Values href="#ref-118"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-78" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-119"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-79" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-120"/>
+<propertyContainer href="#ref-49"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-80" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-79"/>
+<propertyValues href="#ref-121"/>
+<members href="#ref-122"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-81" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-123"/>
+</a1:LabelCollection>
+<a2:Hashtable id="ref-83" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>30</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-124"/>
+<Values href="#ref-125"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-84" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-126"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-85" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-127"/>
+<propertyContainer href="#ref-50"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-86" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-85"/>
+<propertyValues href="#ref-128"/>
+<members href="#ref-129"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-89" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-130"/>
+</a1:LabelCollection>
+<a2:Hashtable id="ref-91" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>30</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>47</HashSize>
+<Keys href="#ref-131"/>
+<Values href="#ref-132"/>
+</a2:Hashtable>
+<a1:NodeCollection id="ref-92" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-133"/>
+</a1:NodeCollection>
+<a1:LayerCollection id="ref-93" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-134"/>
+<propertyContainer href="#ref-51"/>
+</a1:LayerCollection>
+<a1:Layer id="ref-94" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<container href="#ref-93"/>
+<propertyValues href="#ref-135"/>
+<members href="#ref-136"/>
+</a1:Layer>
+<a1:LabelCollection id="ref-95" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<items href="#ref-137"/>
+</a1:LabelCollection>
+<SOAP-ENC:Array id="ref-96" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item href="#ref-15"/>
+<item href="#ref-16"/>
+<item id="ref-138" xsi:type="SOAP-ENC:string">AutoHidePorts</item>
+<item href="#ref-17"/>
+<item href="#ref-18"/>
+<item href="#ref-19"/>
+<item href="#ref-20"/>
+<item href="#ref-21"/>
+<item href="#ref-22"/>
+<item href="#ref-23"/>
+<item href="#ref-24"/>
+<item href="#ref-25"/>
+<item href="#ref-26"/>
+<item href="#ref-27"/>
+<item href="#ref-28"/>
+<item href="#ref-29"/>
+<item href="#ref-30"/>
+<item href="#ref-31"/>
+<item href="#ref-32"/>
+<item href="#ref-33"/>
+<item href="#ref-34"/>
+<item href="#ref-35"/>
+<item href="#ref-36"/>
+<item href="#ref-37"/>
+<item href="#ref-38"/>
+<item href="#ref-39"/>
+<item href="#ref-40"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-97" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-98" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-139"/>
+<_size>6</_size>
+<_version>6</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-99" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-140"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-100" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>10</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-141"/>
+<Values href="#ref-142"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-101" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-143"/>
+<_size>6</_size>
+<_version>6</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-102" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-144"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-103" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item href="#ref-15"/>
+<item href="#ref-16"/>
+<item href="#ref-138"/>
+<item href="#ref-17"/>
+<item href="#ref-18"/>
+<item href="#ref-19"/>
+<item href="#ref-20"/>
+<item href="#ref-21"/>
+<item href="#ref-22"/>
+<item href="#ref-23"/>
+<item href="#ref-24"/>
+<item href="#ref-25"/>
+<item href="#ref-26"/>
+<item href="#ref-27"/>
+<item href="#ref-28"/>
+<item href="#ref-29"/>
+<item href="#ref-30"/>
+<item href="#ref-31"/>
+<item href="#ref-32"/>
+<item href="#ref-33"/>
+<item href="#ref-34"/>
+<item href="#ref-35"/>
+<item href="#ref-36"/>
+<item href="#ref-37"/>
+<item href="#ref-38"/>
+<item href="#ref-39"/>
+<item href="#ref-40"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-104" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-105" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-145"/>
+<_size>3</_size>
+<_version>5</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-106" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-146"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-107" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>10</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-147"/>
+<Values href="#ref-148"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-108" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-149"/>
+<_size>3</_size>
+<_version>5</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-109" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-150"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-110" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item id="ref-151" xsi:type="SOAP-ENC:string">LineMiterLimit</item>
+<item id="ref-152" xsi:type="SOAP-ENC:string">LineDashCap</item>
+<item id="ref-153" xsi:type="SOAP-ENC:string">AutoHidePorts</item>
+<item id="ref-154" xsi:type="SOAP-ENC:string">LineDashOffset</item>
+<item id="ref-155" xsi:type="SOAP-ENC:string">RevealPorts</item>
+<item id="ref-156" xsi:type="SOAP-ENC:string">LineEndCap</item>
+<item id="ref-157" xsi:type="SOAP-ENC:string">FillTextureWrapMode</item>
+<item id="ref-158" xsi:type="SOAP-ENC:string">AllowResize</item>
+<item id="ref-159" xsi:type="SOAP-ENC:string">LineWidth</item>
+<item id="ref-160" xsi:type="SOAP-ENC:string">FillColor</item>
+<item id="ref-161" xsi:type="SOAP-ENC:string">AllowSelect</item>
+<item id="ref-162" xsi:type="SOAP-ENC:string">AllowRotate</item>
+<item id="ref-163" xsi:type="SOAP-ENC:string">Enabled</item>
+<item id="ref-164" xsi:type="SOAP-ENC:string">LineJoin</item>
+<item id="ref-165" xsi:type="SOAP-ENC:string">LineDashStyle</item>
+<item id="ref-166" xsi:type="SOAP-ENC:string">LineColor</item>
+<item id="ref-167" xsi:type="SOAP-ENC:string">LineHitTestPadding</item>
+<item id="ref-168" xsi:type="SOAP-ENC:string">AllowMove</item>
+<item id="ref-169" xsi:type="SOAP-ENC:string">Visible</item>
+<item id="ref-170" xsi:type="SOAP-ENC:string">BackgroundType</item>
+<item id="ref-171" xsi:type="SOAP-ENC:string">BackgroundColor</item>
+<item id="ref-172" xsi:type="SOAP-ENC:string">FillTexture</item>
+<item id="ref-173" xsi:type="SOAP-ENC:string">GradientBounds</item>
+<item id="ref-174" xsi:type="SOAP-ENC:string">GradientAngle</item>
+<item id="ref-175" xsi:type="SOAP-ENC:string">FillType</item>
+<item id="ref-176" xsi:type="SOAP-ENC:string">GradientStartColor</item>
+<item id="ref-177" xsi:type="SOAP-ENC:string">AllowVertexEdit</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-111" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-112" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-178"/>
+<_size>6</_size>
+<_version>22</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-113" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-179"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-114" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-180"/>
+<Values href="#ref-181"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-115" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-182"/>
+<_size>6</_size>
+<_version>22</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-116" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-183"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-117" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item href="#ref-151"/>
+<item href="#ref-152"/>
+<item href="#ref-153"/>
+<item href="#ref-154"/>
+<item href="#ref-155"/>
+<item href="#ref-156"/>
+<item href="#ref-157"/>
+<item href="#ref-158"/>
+<item href="#ref-159"/>
+<item href="#ref-160"/>
+<item href="#ref-161"/>
+<item href="#ref-162"/>
+<item href="#ref-163"/>
+<item href="#ref-164"/>
+<item href="#ref-165"/>
+<item href="#ref-166"/>
+<item href="#ref-167"/>
+<item href="#ref-168"/>
+<item href="#ref-169"/>
+<item href="#ref-170"/>
+<item href="#ref-171"/>
+<item href="#ref-172"/>
+<item href="#ref-173"/>
+<item href="#ref-174"/>
+<item href="#ref-175"/>
+<item href="#ref-176"/>
+<item href="#ref-177"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-118" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-119" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-184"/>
+<_size>5</_size>
+<_version>5</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-120" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-185"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-121" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-186"/>
+<Values href="#ref-187"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-122" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-188"/>
+<_size>5</_size>
+<_version>5</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-123" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-189"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-124" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item id="ref-190" xsi:type="SOAP-ENC:string">LineMiterLimit</item>
+<item id="ref-191" xsi:type="SOAP-ENC:string">LineDashCap</item>
+<item id="ref-192" xsi:type="SOAP-ENC:string">AutoHidePorts</item>
+<item id="ref-193" xsi:type="SOAP-ENC:string">LineDashOffset</item>
+<item id="ref-194" xsi:type="SOAP-ENC:string">RevealPorts</item>
+<item id="ref-195" xsi:type="SOAP-ENC:string">LineEndCap</item>
+<item id="ref-196" xsi:type="SOAP-ENC:string">FillTextureWrapMode</item>
+<item id="ref-197" xsi:type="SOAP-ENC:string">AllowResize</item>
+<item id="ref-198" xsi:type="SOAP-ENC:string">LineColor</item>
+<item id="ref-199" xsi:type="SOAP-ENC:string">LineDashStyle</item>
+<item id="ref-200" xsi:type="SOAP-ENC:string">LineWidth</item>
+<item id="ref-201" xsi:type="SOAP-ENC:string">AllowSelect</item>
+<item id="ref-202" xsi:type="SOAP-ENC:string">AllowRotate</item>
+<item id="ref-203" xsi:type="SOAP-ENC:string">Enabled</item>
+<item id="ref-204" xsi:type="SOAP-ENC:string">LineJoin</item>
+<item id="ref-205" xsi:type="SOAP-ENC:string">FillColor</item>
+<item id="ref-206" xsi:type="SOAP-ENC:string">LineHitTestPadding</item>
+<item id="ref-207" xsi:type="SOAP-ENC:string">AllowMove</item>
+<item id="ref-208" xsi:type="SOAP-ENC:string">Visible</item>
+<item id="ref-209" xsi:type="SOAP-ENC:string">BackgroundType</item>
+<item id="ref-210" xsi:type="SOAP-ENC:string">BackgroundColor</item>
+<item id="ref-211" xsi:type="SOAP-ENC:string">FillTexture</item>
+<item id="ref-212" xsi:type="SOAP-ENC:string">GradientBounds</item>
+<item id="ref-213" xsi:type="SOAP-ENC:string">GradientAngle</item>
+<item id="ref-214" xsi:type="SOAP-ENC:string">FillType</item>
+<item id="ref-215" xsi:type="SOAP-ENC:string">GradientStartColor</item>
+<item id="ref-216" xsi:type="SOAP-ENC:string">AllowVertexEdit</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-125" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-126" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-217"/>
+<_size>8</_size>
+<_version>8</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-127" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-218"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-128" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>4</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-219"/>
+<Values href="#ref-220"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-129" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-221"/>
+<_size>8</_size>
+<_version>8</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-130" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-222"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-131" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item href="#ref-190"/>
+<item href="#ref-191"/>
+<item href="#ref-192"/>
+<item href="#ref-193"/>
+<item href="#ref-194"/>
+<item href="#ref-195"/>
+<item href="#ref-196"/>
+<item href="#ref-197"/>
+<item href="#ref-198"/>
+<item href="#ref-199"/>
+<item href="#ref-200"/>
+<item href="#ref-201"/>
+<item href="#ref-202"/>
+<item href="#ref-203"/>
+<item href="#ref-204"/>
+<item href="#ref-205"/>
+<item href="#ref-206"/>
+<item href="#ref-207"/>
+<item href="#ref-208"/>
+<item href="#ref-209"/>
+<item href="#ref-210"/>
+<item href="#ref-211"/>
+<item href="#ref-212"/>
+<item href="#ref-213"/>
+<item href="#ref-214"/>
+<item href="#ref-215"/>
+<item href="#ref-216"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-132" SOAP-ENC:arrayType="xsd:anyType[27]">
+<item xsi:type="xsd:float">10</item>
+<item xsi:type="a5:DashCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">0</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a5:LineCap" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Flat</item>
+<item xsi:type="a5:WrapMode" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Tile</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="a5:DashStyle" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Solid</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a5:LineJoin" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/System.Drawing.Drawing2D/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">Bevel</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:float">6</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:null="1"/>
+<item xsi:type="a4:RectangleF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>0</x>
+<y>0</y>
+<width>100</width>
+<height>100</height>
+</item>
+<item xsi:type="xsd:float">90</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>95</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+</SOAP-ENC:Array>
+<a2:ArrayList id="ref-133" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-223"/>
+<_size>3</_size>
+<_version>3</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-134" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-224"/>
+<_size>1</_size>
+<_version>1</_version>
+</a2:ArrayList>
+<a2:Hashtable id="ref-135" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>4</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-225"/>
+<Values href="#ref-226"/>
+</a2:Hashtable>
+<a2:ArrayList id="ref-136" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-227"/>
+<_size>3</_size>
+<_version>3</_version>
+</a2:ArrayList>
+<a2:ArrayList id="ref-137" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-228"/>
+<_size>0</_size>
+<_version>0</_version>
+</a2:ArrayList>
+<SOAP-ENC:Array id="ref-139" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-229"/>
+<item href="#ref-230"/>
+<item href="#ref-231"/>
+<item href="#ref-232"/>
+<item href="#ref-233"/>
+<item href="#ref-234"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-140" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-58"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-141" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-52"/>
+<item href="#ref-26"/>
+<item href="#ref-32"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-142" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-53"/>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-143" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-229"/>
+<item href="#ref-230"/>
+<item href="#ref-231"/>
+<item href="#ref-232"/>
+<item href="#ref-233"/>
+<item href="#ref-234"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-144" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-145" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-235"/>
+<item href="#ref-236"/>
+<item href="#ref-237"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-146" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-66"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-147" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-52"/>
+<item href="#ref-26"/>
+<item href="#ref-32"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-148" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-53"/>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-149" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-235"/>
+<item href="#ref-236"/>
+<item href="#ref-237"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-150" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-178" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-238"/>
+<item href="#ref-239"/>
+<item href="#ref-240"/>
+<item href="#ref-241"/>
+<item href="#ref-242"/>
+<item href="#ref-243"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-179" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-72"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-180" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-244" xsi:type="SOAP-ENC:string">Name</item>
+<item href="#ref-163"/>
+<item href="#ref-169"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-181" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-245" xsi:type="SOAP-ENC:string">Default</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-182" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-238"/>
+<item href="#ref-239"/>
+<item href="#ref-240"/>
+<item href="#ref-241"/>
+<item href="#ref-242"/>
+<item href="#ref-243"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-183" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-184" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-246"/>
+<item href="#ref-247"/>
+<item href="#ref-248"/>
+<item href="#ref-249"/>
+<item href="#ref-250"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-185" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-80"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-186" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-244"/>
+<item href="#ref-163"/>
+<item href="#ref-169"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-187" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-245"/>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-188" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-246"/>
+<item href="#ref-247"/>
+<item href="#ref-248"/>
+<item href="#ref-249"/>
+<item href="#ref-250"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-189" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-217" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-251"/>
+<item href="#ref-252"/>
+<item href="#ref-253"/>
+<item href="#ref-254"/>
+<item href="#ref-255"/>
+<item href="#ref-256"/>
+<item href="#ref-257"/>
+<item href="#ref-258"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-218" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-86"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-219" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-259" xsi:type="SOAP-ENC:string">Name</item>
+<item href="#ref-203"/>
+<item href="#ref-208"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-220" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item id="ref-260" xsi:type="SOAP-ENC:string">Default</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-221" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-251"/>
+<item href="#ref-252"/>
+<item href="#ref-253"/>
+<item href="#ref-254"/>
+<item href="#ref-255"/>
+<item href="#ref-256"/>
+<item href="#ref-257"/>
+<item href="#ref-258"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-222" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-223" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-261"/>
+<item href="#ref-262"/>
+<item href="#ref-263"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-224" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-94"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-225" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-259"/>
+<item href="#ref-203"/>
+<item href="#ref-208"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-226" SOAP-ENC:arrayType="xsd:anyType[3]">
+<item href="#ref-260"/>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-227" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item href="#ref-261"/>
+<item href="#ref-262"/>
+<item href="#ref-263"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-228" SOAP-ENC:arrayType="xsd:anyType[16]">
+</SOAP-ENC:Array>
+<a1:Line id="ref-229" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-264">Line</name>
+<parent href="#ref-46"/>
+<pathPoints href="#ref-265"/>
+<pathTypes href="#ref-266"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-267"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Polygon id="ref-230" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-268">Polygon</name>
+<parent href="#ref-46"/>
+<pathPoints href="#ref-269"/>
+<pathTypes href="#ref-270"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-271"/>
+</a1:Polygon>
+<a1:Line id="ref-231" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-272">Line1</name>
+<parent href="#ref-46"/>
+<pathPoints href="#ref-273"/>
+<pathTypes href="#ref-274"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-275"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-232" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-276">Line2</name>
+<parent href="#ref-46"/>
+<pathPoints href="#ref-277"/>
+<pathTypes href="#ref-278"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-279"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:CirclePort id="ref-233" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-280">CirclePort</name>
+<parent href="#ref-46"/>
+<propertyValues href="#ref-281"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>120</x>
+<y>48</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:CirclePort id="ref-234" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-282">CirclePort1</name>
+<parent href="#ref-46"/>
+<propertyValues href="#ref-283"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>36</x>
+<y>48</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:PolyLine id="ref-235" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-284">PolyLine</name>
+<parent href="#ref-47"/>
+<pathPoints href="#ref-285"/>
+<pathTypes href="#ref-286"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-287"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:PolyLine>
+<a1:CirclePort id="ref-236" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-288">CirclePort</name>
+<parent href="#ref-47"/>
+<propertyValues href="#ref-289"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>136</x>
+<y>48</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:CirclePort id="ref-237" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-290">CirclePort1</name>
+<parent href="#ref-47"/>
+<propertyValues href="#ref-291"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>48</x>
+<y>48</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:Line id="ref-238" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-292">Line</name>
+<parent href="#ref-48"/>
+<pathPoints href="#ref-293"/>
+<pathTypes href="#ref-294"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-295"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-239" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-296">Line1</name>
+<parent href="#ref-48"/>
+<pathPoints href="#ref-297"/>
+<pathTypes href="#ref-298"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-299"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-240" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-300">Line2</name>
+<parent href="#ref-48"/>
+<pathPoints href="#ref-301"/>
+<pathTypes href="#ref-302"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-303"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-241" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-304">Line3</name>
+<parent href="#ref-48"/>
+<pathPoints href="#ref-305"/>
+<pathTypes href="#ref-306"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-307"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:CirclePort id="ref-242" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-308">CirclePort</name>
+<parent href="#ref-48"/>
+<propertyValues href="#ref-309"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>71.99999</x>
+<y>41.9999962</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:CirclePort id="ref-243" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-310">CirclePort1</name>
+<parent href="#ref-48"/>
+<propertyValues href="#ref-311"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>41.9999962</x>
+<y>41.9999962</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:Line id="ref-246" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-312">Line</name>
+<parent href="#ref-49"/>
+<pathPoints href="#ref-313"/>
+<pathTypes href="#ref-314"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-315"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-247" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-316">Line1</name>
+<parent href="#ref-49"/>
+<pathPoints href="#ref-317"/>
+<pathTypes href="#ref-318"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-319"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-248" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-320">Line2</name>
+<parent href="#ref-49"/>
+<pathPoints href="#ref-321"/>
+<pathTypes href="#ref-322"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-323"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-249" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-324">Line3</name>
+<parent href="#ref-49"/>
+<pathPoints href="#ref-325"/>
+<pathTypes href="#ref-326"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-327"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:CirclePort id="ref-250" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-328">CirclePort</name>
+<parent href="#ref-49"/>
+<propertyValues href="#ref-329"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>60</x>
+<y>12</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:Ellipse id="ref-251" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-330">Ellipse</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-331"/>
+<pathTypes href="#ref-332"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-333"/>
+</a1:Ellipse>
+<a1:Line id="ref-252" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-334">Line</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-335"/>
+<pathTypes href="#ref-336"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-337"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-253" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-338">Line1</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-339"/>
+<pathTypes href="#ref-340"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-341"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:CirclePort id="ref-254" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-342">CirclePort</name>
+<parent href="#ref-50"/>
+<propertyValues href="#ref-343"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>90</x>
+<y>36</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:CirclePort id="ref-255" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-344">CirclePort1</name>
+<parent href="#ref-50"/>
+<propertyValues href="#ref-345"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>90</x>
+<y>96</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<a1:Line id="ref-256" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-346">Line2</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-347"/>
+<pathTypes href="#ref-348"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-349"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-257" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-350">Line3</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-351"/>
+<pathTypes href="#ref-352"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-353"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-258" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-354">Line4</name>
+<parent href="#ref-50"/>
+<pathPoints href="#ref-355"/>
+<pathTypes href="#ref-356"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-357"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-261" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-358">Line</name>
+<parent href="#ref-51"/>
+<pathPoints href="#ref-359"/>
+<pathTypes href="#ref-360"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-361"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:Line id="ref-262" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-362">Line1</name>
+<parent href="#ref-51"/>
+<pathPoints href="#ref-363"/>
+<pathTypes href="#ref-364"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<propertyValues href="#ref-365"/>
+<firstEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+<lastEndPoint xsi:type="xsd:anyType" xsi:null="1"/>
+</a1:Line>
+<a1:CirclePort id="ref-263" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">
+<name id="ref-366">CirclePort</name>
+<parent href="#ref-51"/>
+<propertyValues href="#ref-367"/>
+<m11>1</m11>
+<m12>0</m12>
+<m21>0</m21>
+<m22>1</m22>
+<dx>0</dx>
+<dy>0</dy>
+<location xsi:type="a4:PointF" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<x>60</x>
+<y>60</y>
+</location>
+<radius>3</radius>
+</a1:CirclePort>
+<SOAP-ENC:Array id="ref-265" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>36</x>
+<y>48</y>
+</item>
+<item>
+<x>72</x>
+<y>48</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-266" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-267" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>21</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-368"/>
+<Values href="#ref-369"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-269" SOAP-ENC:arrayType="a4:PointF[3]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>72</x>
+<y>36</y>
+</item>
+<item>
+<x>72</x>
+<y>60</y>
+</item>
+<item>
+<x>96</x>
+<y>48</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-270" xsi:type="SOAP-ENC:base64">AAGB</SOAP-ENC:Array>
+<a2:Hashtable id="ref-271" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>3</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-370"/>
+<Values href="#ref-371"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-273" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>96</x>
+<y>36</y>
+</item>
+<item>
+<x>96</x>
+<y>60</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-274" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-275" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>21</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-372"/>
+<Values href="#ref-373"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-277" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>96</x>
+<y>48</y>
+</item>
+<item>
+<x>120</x>
+<y>48</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-278" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-279" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>21</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-374"/>
+<Values href="#ref-375"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-281" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>38</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-376"/>
+<Values href="#ref-377"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-283" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>38</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-378"/>
+<Values href="#ref-379"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-285" SOAP-ENC:arrayType="a4:PointF[10]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>48</x>
+<y>48</y>
+</item>
+<item>
+<x>64</x>
+<y>48</y>
+</item>
+<item>
+<x>72</x>
+<y>40</y>
+</item>
+<item>
+<x>80</x>
+<y>56</y>
+</item>
+<item>
+<x>88</x>
+<y>40</y>
+</item>
+<item>
+<x>96</x>
+<y>56</y>
+</item>
+<item>
+<x>104</x>
+<y>40</y>
+</item>
+<item>
+<x>112</x>
+<y>56</y>
+</item>
+<item>
+<x>120</x>
+<y>48</y>
+</item>
+<item>
+<x>136</x>
+<y>48</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-286" xsi:type="SOAP-ENC:base64">AAEBAQEBAQEBAQ==</SOAP-ENC:Array>
+<a2:Hashtable id="ref-287" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>21</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-380"/>
+<Values href="#ref-381"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-289" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>38</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-382"/>
+<Values href="#ref-383"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-291" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>38</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-384"/>
+<Values href="#ref-385"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-293" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>53.9999962</x>
+<y>23.9999981</y>
+</item>
+<item>
+<x>53.9999962</x>
+<y>59.9999962</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-294" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-295" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-386"/>
+<Values href="#ref-387"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-297" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>59.9999962</x>
+<y>23.9999981</y>
+</item>
+<item>
+<x>59.9999962</x>
+<y>59.9999962</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-298" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-299" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-388"/>
+<Values href="#ref-389"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-301" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>59.9999962</x>
+<y>41.9999962</y>
+</item>
+<item>
+<x>71.99999</x>
+<y>41.9999962</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-302" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-303" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-390"/>
+<Values href="#ref-391"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-305" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>41.9999962</x>
+<y>41.9999962</y>
+</item>
+<item>
+<x>53.9999962</x>
+<y>41.9999962</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-306" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-307" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-392"/>
+<Values href="#ref-393"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-309" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>26</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-394"/>
+<Values href="#ref-395"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-311" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>26</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-396"/>
+<Values href="#ref-397"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-313" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>54</x>
+<y>48</y>
+</item>
+<item>
+<x>66</x>
+<y>48</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-314" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-315" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-398"/>
+<Values href="#ref-399"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-317" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>48</x>
+<y>42</y>
+</item>
+<item>
+<x>72</x>
+<y>42</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-318" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-319" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-400"/>
+<Values href="#ref-401"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-321" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>42</x>
+<y>36</y>
+</item>
+<item>
+<x>78</x>
+<y>36</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-322" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-323" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-402"/>
+<Values href="#ref-403"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-325" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>60</x>
+<y>36</y>
+</item>
+<item>
+<x>60</x>
+<y>12</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-326" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-327" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-404"/>
+<Values href="#ref-405"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-329" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>26</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-406"/>
+<Values href="#ref-407"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-331" SOAP-ENC:arrayType="a4:PointF[13]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>108</x>
+<y>66</y>
+</item>
+<item>
+<x>108</x>
+<y>75.941124</y>
+</item>
+<item>
+<x>99.941124</x>
+<y>84</y>
+</item>
+<item>
+<x>90</x>
+<y>84</y>
+</item>
+<item>
+<x>80.05887</x>
+<y>84</y>
+</item>
+<item>
+<x>72</x>
+<y>75.941124</y>
+</item>
+<item>
+<x>72</x>
+<y>66</y>
+</item>
+<item>
+<x>72</x>
+<y>56.0588722</y>
+</item>
+<item>
+<x>80.05887</x>
+<y>48</y>
+</item>
+<item>
+<x>90</x>
+<y>48</y>
+</item>
+<item>
+<x>99.941124</x>
+<y>48</y>
+</item>
+<item>
+<x>108</x>
+<y>56.0588722</y>
+</item>
+<item>
+<x>108</x>
+<y>66</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-332" xsi:type="SOAP-ENC:base64">AAMDAwMDAwMDAwMDgw==</SOAP-ENC:Array>
+<a2:Hashtable id="ref-333" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>0</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-408"/>
+<Values href="#ref-409"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-335" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>90</x>
+<y>48</y>
+</item>
+<item>
+<x>90</x>
+<y>36</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-336" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-337" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-410"/>
+<Values href="#ref-411"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-339" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>90</x>
+<y>96</y>
+</item>
+<item>
+<x>90</x>
+<y>84</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-340" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-341" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-412"/>
+<Values href="#ref-413"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-343" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-414"/>
+<Values href="#ref-415"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-345" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-416"/>
+<Values href="#ref-417"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-347" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>85.5</x>
+<y>58.5</y>
+</item>
+<item>
+<x>94.5</x>
+<y>58.5</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-348" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-349" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-418"/>
+<Values href="#ref-419"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-351" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>90</x>
+<y>54</y>
+</item>
+<item>
+<x>90</x>
+<y>63</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-352" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-353" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-420"/>
+<Values href="#ref-421"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-355" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>86.5</x>
+<y>76</y>
+</item>
+<item>
+<x>94</x>
+<y>76</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-356" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-357" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-422"/>
+<Values href="#ref-423"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-359" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>36</x>
+<y>36</y>
+</item>
+<item>
+<x>84</x>
+<y>36</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-360" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-361" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-424"/>
+<Values href="#ref-425"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-363" SOAP-ENC:arrayType="a4:PointF[2]" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<item>
+<x>60</x>
+<y>36</y>
+</item>
+<item>
+<x>60</x>
+<y>60</y>
+</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-364" xsi:type="SOAP-ENC:base64">AAE=</SOAP-ENC:Array>
+<a2:Hashtable id="ref-365" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>7</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>11</HashSize>
+<Keys href="#ref-426"/>
+<Values href="#ref-427"/>
+</a2:Hashtable>
+<a2:Hashtable id="ref-367" xmlns:a2="http://schemas.microsoft.com/clr/ns/System.Collections">
+<LoadFactor>0.72</LoadFactor>
+<Version>14</Version>
+<Comparer xsi:null="1"/>
+<HashCodeProvider xsi:null="1"/>
+<HashSize>23</HashSize>
+<Keys href="#ref-428"/>
+<Values href="#ref-429"/>
+</a2:Hashtable>
+<SOAP-ENC:Array id="ref-368" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-21"/>
+<item href="#ref-25"/>
+<item href="#ref-24"/>
+<item href="#ref-23"/>
+<item href="#ref-22"/>
+<item href="#ref-40"/>
+<item href="#ref-31"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-369" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-370" SOAP-ENC:arrayType="xsd:anyType[1]">
+<item href="#ref-40"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-371" SOAP-ENC:arrayType="xsd:anyType[1]">
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-372" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-21"/>
+<item href="#ref-25"/>
+<item href="#ref-24"/>
+<item href="#ref-23"/>
+<item href="#ref-22"/>
+<item href="#ref-40"/>
+<item href="#ref-31"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-373" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-374" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-21"/>
+<item href="#ref-25"/>
+<item href="#ref-24"/>
+<item href="#ref-23"/>
+<item href="#ref-22"/>
+<item href="#ref-40"/>
+<item href="#ref-31"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-375" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-376" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-32"/>
+<item href="#ref-25"/>
+<item href="#ref-38"/>
+<item id="ref-430" xsi:type="SOAP-ENC:string">AttachAtPerimeter</item>
+<item href="#ref-24"/>
+<item href="#ref-21"/>
+<item href="#ref-40"/>
+<item href="#ref-22"/>
+<item href="#ref-29"/>
+<item href="#ref-26"/>
+<item href="#ref-31"/>
+<item href="#ref-23"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-377" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">1</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-378" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-32"/>
+<item href="#ref-25"/>
+<item href="#ref-38"/>
+<item href="#ref-430"/>
+<item href="#ref-24"/>
+<item href="#ref-21"/>
+<item href="#ref-40"/>
+<item href="#ref-22"/>
+<item href="#ref-29"/>
+<item href="#ref-26"/>
+<item href="#ref-31"/>
+<item href="#ref-23"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-379" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">1</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-380" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-21"/>
+<item href="#ref-25"/>
+<item href="#ref-24"/>
+<item href="#ref-23"/>
+<item href="#ref-22"/>
+<item href="#ref-40"/>
+<item href="#ref-31"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-381" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-382" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-32"/>
+<item href="#ref-25"/>
+<item href="#ref-38"/>
+<item href="#ref-430"/>
+<item href="#ref-24"/>
+<item href="#ref-21"/>
+<item href="#ref-40"/>
+<item href="#ref-22"/>
+<item href="#ref-29"/>
+<item href="#ref-26"/>
+<item href="#ref-31"/>
+<item href="#ref-23"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-383" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">1</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-384" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-32"/>
+<item href="#ref-25"/>
+<item href="#ref-38"/>
+<item href="#ref-430"/>
+<item href="#ref-24"/>
+<item href="#ref-21"/>
+<item href="#ref-40"/>
+<item href="#ref-22"/>
+<item href="#ref-29"/>
+<item href="#ref-26"/>
+<item href="#ref-31"/>
+<item href="#ref-23"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-385" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">1</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-386" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-387" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-388" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-389" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-390" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-391" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-392" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-393" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-394" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-169"/>
+<item id="ref-431" xsi:type="SOAP-ENC:string">AttachAtPerimeter</item>
+<item href="#ref-162"/>
+<item href="#ref-175"/>
+<item href="#ref-159"/>
+<item href="#ref-161"/>
+<item href="#ref-166"/>
+<item href="#ref-177"/>
+<item href="#ref-158"/>
+<item href="#ref-160"/>
+<item href="#ref-163"/>
+<item href="#ref-168"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-395" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-396" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-169"/>
+<item href="#ref-431"/>
+<item href="#ref-162"/>
+<item href="#ref-175"/>
+<item href="#ref-159"/>
+<item href="#ref-161"/>
+<item href="#ref-166"/>
+<item href="#ref-177"/>
+<item href="#ref-158"/>
+<item href="#ref-160"/>
+<item href="#ref-163"/>
+<item href="#ref-168"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-397" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-398" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-399" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-400" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-401" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-402" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-403" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-404" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-166"/>
+<item href="#ref-168"/>
+<item href="#ref-162"/>
+<item href="#ref-161"/>
+<item href="#ref-158"/>
+<item href="#ref-177"/>
+<item href="#ref-159"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-405" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:float">2</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-406" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-169"/>
+<item href="#ref-431"/>
+<item href="#ref-162"/>
+<item href="#ref-175"/>
+<item href="#ref-159"/>
+<item href="#ref-161"/>
+<item href="#ref-166"/>
+<item href="#ref-177"/>
+<item href="#ref-158"/>
+<item href="#ref-160"/>
+<item href="#ref-163"/>
+<item href="#ref-168"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-407" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-408" SOAP-ENC:arrayType="xsd:anyType[0]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-409" SOAP-ENC:arrayType="xsd:anyType[0]">
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-410" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-411" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-412" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-413" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-414" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-208"/>
+<item href="#ref-216"/>
+<item href="#ref-202"/>
+<item href="#ref-214"/>
+<item href="#ref-200"/>
+<item href="#ref-201"/>
+<item href="#ref-198"/>
+<item href="#ref-203"/>
+<item href="#ref-197"/>
+<item href="#ref-205"/>
+<item id="ref-432" xsi:type="SOAP-ENC:string">AttachAtPerimeter</item>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-415" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-416" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-208"/>
+<item href="#ref-216"/>
+<item href="#ref-202"/>
+<item href="#ref-214"/>
+<item href="#ref-200"/>
+<item href="#ref-201"/>
+<item href="#ref-198"/>
+<item href="#ref-203"/>
+<item href="#ref-197"/>
+<item href="#ref-205"/>
+<item href="#ref-432"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-417" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-418" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-419" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-420" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-421" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-422" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-423" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-424" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-425" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-426" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item href="#ref-198"/>
+<item href="#ref-202"/>
+<item href="#ref-201"/>
+<item href="#ref-216"/>
+<item href="#ref-197"/>
+<item href="#ref-200"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-427" SOAP-ENC:arrayType="xsd:anyType[7]">
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:float">2</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-428" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item href="#ref-208"/>
+<item href="#ref-216"/>
+<item href="#ref-202"/>
+<item href="#ref-214"/>
+<item href="#ref-200"/>
+<item href="#ref-201"/>
+<item href="#ref-198"/>
+<item href="#ref-203"/>
+<item href="#ref-197"/>
+<item href="#ref-205"/>
+<item href="#ref-432"/>
+<item href="#ref-207"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-429" SOAP-ENC:arrayType="xsd:anyType[12]">
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a1:FillStyle+FillType" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Syncfusion.Windows.Forms.Diagram/Syncfusion.Diagram%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Df9f35dece0097d53">Solid</item>
+<item xsi:type="xsd:float">1</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>35</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">true</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="a4:Color" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing%2C%20Version%3D1.0.5000.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Db03f5f7f11d50a3a">
+<value>0</value>
+<knownColor>164</knownColor>
+<state>1</state>
+<name xsi:null="1"/>
+</item>
+<item xsi:type="xsd:boolean">false</item>
+<item xsi:type="xsd:boolean">true</item>
+</SOAP-ENC:Array>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

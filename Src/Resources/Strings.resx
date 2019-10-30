@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Toolnames.CurveTool">
+		<value>CurveTool</value>
+	</data>
+	<data name="Toolnames.RectangleTool">
+		<value>RectangleTool</value>
+	</data>
+	<data name="Toolnames.EllipseTool">
+		<value>EllipseTool</value>
+	</data>
+	<data name="Toolnames.ArcTool">
+		<value>ArcTool</value>
+	</data>
+	<data name="Toolnames.ClosedCurveTool">
+		<value>ClosedCurveTool</value>
+	</data>
+	<data name="Toolnames.GroupTool">
+		<value>GroupTool</value>
+	</data>
+	<data name="Toolnames.LineTool">
+		<value>LineTool</value>
+	</data>
+	<data name="Toolnames.LinkTool">
+		<value>LinkTool</value>
+	</data>
+	<data name="Toolnames.MetafileTool">
+		<value>MetafileTool</value>
+	</data>
+	<data name="Toolnames.MoveTool">
+		<value>MoveTool</value>
+	</data>
+	<data name="Toolnames.PanTool">
+		<value>PanTool</value>
+	</data>
+	<data name="Toolnames.PolygonTool">
+		<value>PolygonTool</value>
+	</data>
+	<data name="Toolnames.PolyLineTool">
+		<value>PolyLineTool</value>
+	</data>
+	<data name="Toolnames.PortTool">
+		<value>PortTool</value>
+	</data>
+	<data name="Toolnames.ResizeTool">
+		<value>ResizeTool</value>
+	</data>
+	<data name="Toolnames.SelectTool">
+		<value>SelectTool</value>
+	</data>
+	<data name="Toolnames.TextTool">
+		<value>TextTool</value>
+	</data>
+	<data name="Toolnames.UngroupTool">
+		<value>UngroupTool</value>
+	</data>
+	<data name="Toolnames.ZoomTool">
+		<value>ZoomTool</value>
+	</data>
+	<data name="Toolnames.RotateTool">
+		<value>RotateTool</value>
+	</data>
+	<data name="Toolnames.BitmapTool">
+		<value>BitmapTool</value>
+	</data>
+	<data name="Toolnames.RoundRectTool">
+		<value>RoundRectTool</value>
+	</data>
+	<data name="Toolnames.VertexEditTool">
+		<value>VertexEditTool</value>
+	</data>
+	<data name="Toolnames.OrthogonalLineTool">
+		<value>OrthogonalLineTool</value>
+	</data>
+	<data name="CommandDescription.AlignCmd">
+		<value>Align Nodes</value>
+	</data>
+	<data name="CommandDescription.DeleteVertexCmd">
+		<value>Delete Vertex</value>
+	</data>
+	<data name="CommandDescription.GroupCmd">
+		<value>Group Nodes</value>
+	</data>
+	<data name="CommandDescription.InsertNodesCmd">
+		<value>Insert Nodes</value>
+	</data>
+	<data name="CommandDescription.InsertVertexCmd">
+		<value>Insert Vertex</value>
+	</data>
+	<data name="CommandDescription.LinkCmd">
+		<value>Link Symbols</value>
+	</data>
+	<data name="CommandDescription.MoveCmd">
+		<value>Move Nodes</value>
+	</data>
+	<data name="CommandDescription.MoveVertexCmd">
+		<value>Move Vertex</value>
+	</data>
+	<data name="CommandDescription.RemoveNodesCmd">
+		<value>Remove Nodes</value>
+	</data>
+	<data name="CommandDescription.ResizeCmd">
+		<value>Resize Nodes</value>
+	</data>
+	<data name="CommandDescription.RotateCmd">
+		<value>Rotate Nodes</value>
+	</data>
+	<data name="CommandDescription.ScaleCmd">
+		<value>Scale Nodes</value>
+	</data>
+	<data name="CommandDescription.SpacingCmd">
+		<value>Space Nodes</value>
+	</data>
+	<data name="CommandDescription.UngroupCmd">
+		<value>Ungroup Nodes</value>
+	</data>
+	<data name="CommandDescription.ZOrderCmd">
+		<value>ZOrder</value>
+	</data>
+	<data name="Toolnames.InsertSymbolTool">
+		<value>InsertSymbolTool</value>
+	</data>
+</root>

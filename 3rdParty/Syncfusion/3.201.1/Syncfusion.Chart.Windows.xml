@@ -1,0 +1,1368 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.Chart.Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Windows.Forms.Chart.ChartControl">
+            <summary>
+            ChartControl is the aggreggate class that contains all the other elements of a chart such as the axes and the chart display area. You
+            normally instantiate and host a ChartControl instance in your application.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetGraphics">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnCreateControl">
+            <internalonly/>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Chart.ChartControl.AspMode">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.#ctor">
+            <summary>
+             Constructor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            For internal use. Do not use this construtor directly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.#ctor(System.Boolean)">
+            <summary>
+                Constructor.
+            </summary>
+            <param name="addRandomData" type="bool">
+                <para>
+                True if random data is to be added. Use default constructor instead.
+                </para>
+            </param>    
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ShouldSerializeChartArea">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ResetFont">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ShouldSerializeFont">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomingChanged">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnHScrollBarValueChanged(System.Object,System.EventArgs)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnVScrollBarValueChanged(System.Object,System.EventArgs)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ShouldSerializeChartInterior">
+            <summary>
+            ???
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.AppendSeries(Syncfusion.Windows.Forms.Chart.ChartSeries,Syncfusion.Windows.Forms.Chart.ChartPoint)">
+            <summary>
+            Append point to series.
+            </summary>
+            <param name="series"></param>
+            <param name="point"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.BeginUpdate">
+            <summary>
+            Call this method if you perform multiple changes in quick succession.
+            <seealso cref="M:Syncfusion.Windows.Forms.Chart.ChartControl.EndUpdate"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaPointToChartControl(System.Drawing.Point)">
+            <summary>
+                The ChartAreaPointToChartControl method takes a point object in ChartArea
+                coordinates and returns a point object in ChartControl coordinates.
+            </summary>
+            <param name="p" type="System.Drawing.Point">
+                <para>
+                    The point in ChartArea coordinates.
+                </para>
+            </param>
+            <returns>
+                A System.Drawing.Point value that represents the point in ChartControl coordinates.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaRectToChartControl(System.Drawing.RectangleF)">
+            <summary>
+                The ChartAreaRectToChartControl method takes a RectangleF object in ChartArea
+                coordinates and returns a RectangleF object in ChartControl coordinates.
+            </summary>
+            <param name="rect" type="System.Drawing.RectangleF">
+                <para>
+                    The RectangleF in ChartArea coordinates.
+                </para>
+            </param>
+            <returns>
+                A System.Drawing.RectangleF value that represents the RectangleF in ChartControl coordinates.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.DisplayUserEditStylesDialog(System.Int32)">
+            <summary>
+            Displays the dialog to edit user styles for a series.
+            </summary>
+            <param name="seriesIndex">The index of the series.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Draw(System.Drawing.Graphics,System.Drawing.Size)">
+            <summary>
+                The GetChartAreaGraphics method provides a Graphics object for drawing on the ChartArea.
+            </summary>
+            
+            <returns>
+                A Graphics object.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Draw(System.Drawing.Image)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.EndUpdate">
+            <summary>
+            Call this method if you called <see cref="M:Syncfusion.Windows.Forms.Chart.ChartControl.BeginUpdate"/> earlier and you are done with your changes.
+            <seealso cref="M:Syncfusion.Windows.Forms.Chart.ChartControl.BeginUpdate"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaBounds">
+            <summary>
+                The GetChartAreaBounds method provides access to the bounds of the ChartArea.
+            </summary>
+            
+            <returns>
+                A System.Drawing.Rectangle value of the bounds of the ChartArea in ChartControl coordinates.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.Double,System.Double,Syncfusion.Windows.Forms.Chart.ChartAxis,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <param name="xAxis"></param>
+            <param name="yAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.Double,System.Double)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.Double,System.DateTime,Syncfusion.Windows.Forms.Chart.ChartAxis,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns the co-ordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <param name="xAxis"></param>
+            <param name="yAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.Double,System.DateTime)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.DateTime,System.Double,Syncfusion.Windows.Forms.Chart.ChartAxis,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <param name="xAxis"></param>
+            <param name="yAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.DateTime,System.Double)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.DateTime,System.DateTime,Syncfusion.Windows.Forms.Chart.ChartAxis,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <param name="xAxis"></param>
+            <param name="yAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinates(System.DateTime,System.DateTime)">
+            <summary>
+            Returns the coordinates on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateX(System.Double)">
+            <summary>
+            Returns a coordinate X on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateX(System.Double,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns a coordinate X on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="xAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateX(System.DateTime)">
+            <summary>
+            Returns a coordinate X on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateX(System.DateTime,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns a coordinate X on ChartArea for its value on an axis.
+            </summary>
+            <param name="xValue"></param>
+            <param name="xAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateY(System.Double)">
+            <summary>
+            Returns a coordinate Y on ChartArea for its value on an axis.
+            </summary>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateY(System.Double,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns a coordinate Y on ChartArea for its value on an axis.
+            </summary>
+            <param name="yValue"></param>
+            <param name="yAxis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateY(System.DateTime)">
+            <summary>
+            Returns a coordinate Y on ChartArea for its value on an axis.
+            </summary>
+            <param name="yValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartAreaCoordinateY(System.DateTime,Syncfusion.Windows.Forms.Chart.ChartAxis)">
+            <summary>
+            Returns a coordinate Y on ChartArea for its value on an axis.
+            </summary>
+            <param name="yValue"></param>
+            <param name="yAxis"></param>
+            <returns></returns>   
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetChartRegions">
+            <summary>
+            List of all ChartRegion objects that make up the ChartControl.
+            </summary>
+            
+            <returns>
+                A System.Collections.IList of the ChartRegions.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetRegionFromIndexed(System.Int32,System.Int32)">
+            <summary>
+            Returns the ChartRegion coresponding to the series and point indexed supplied.
+            </summary>
+            <param name="seriesIndex"></param>
+            <param name="pointIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.NotifySeriesChanged">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartFormatAxisLabel(Syncfusion.Windows.Forms.Chart.ChartAxis,Syncfusion.Windows.Forms.Chart.ChartFormatAxisLabelEventArgs)">
+            <internalonly/>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Redraw(System.Boolean)">
+            <summary>
+            Forces the redraw of the Chart Area.
+            </summary>
+            <param name="update"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartArea_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Event handler to event chartArea.Paint.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Dispose(System.Boolean)">
+            <summary>
+            Dispose this control and its children.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartAreaPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Method is called for drawing of area. Calling in the method ChartArea_Paint.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionClick(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the user clicks inside a chart region.
+                <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionClick"/>
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">.
+                <para>
+                Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseDown(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the mouse is pressed down inside a chart region.
+                <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseDown"/>
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseEnter(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the mouse enters a chart region.
+                <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseEnter"/>
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseHover(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the mouse hovers over a chart region.
+                <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseHover"/>
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                 Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseLeave(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                 Method called when the mouse leaves a chart region.
+                 <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseLeave"/>
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                 Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseMove(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the mouse is moved over a chart region.
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                 Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnChartRegionMouseUp(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+                Method called when the mouse is released over a chart region.
+            </summary>
+            <param name="e" type="Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs">
+                <para>
+                 Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnCreateChartModel">
+            <summary>
+                Override this method to instantiate a derived chart model if needed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+                <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)"/>
+            </summary>
+            <param name="e" type="System.Windows.Forms.PaintEventArgs">
+                <para>
+                Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnSizeChanged(System.EventArgs)">
+            <summary>
+               <see cref="M:System.Windows.Forms.Control.OnSizeChanged(System.EventArgs)"/>
+            </summary>
+            <param name="e" type="System.EventArgs">
+                <para>
+                Argument.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnVisibleRangeChanged(System.EventArgs)">
+            <summary>
+                Method is called when the visible range is changed during zooming.
+                <seealso cref="E:Syncfusion.Windows.Forms.Chart.ChartControl.VisibleRangeChanged"/>
+            </summary>
+            <param name="e" type="System.EventArgs">
+                <para>
+            
+                </para>
+            </param>
+            <returns>
+                A void value...
+            </returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+                <see cref="M:System.Windows.Forms.Control.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)"/>
+            </summary>
+            <param name="msg" type="ref System.Windows.Forms.Message">
+                <para>
+                 Windows message.
+                </para>
+            </param>
+            <param name="keyData" type="System.Windows.Forms.Keys">
+                <para>
+                Key code.
+                </para>
+            </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetSideBySideInfo(Syncfusion.Windows.Forms.Chart.ChartSeries,Syncfusion.Windows.Forms.Chart.ChartSeriesRenderer)">
+            <summary>
+            Returns position side by SideInfo.
+            </summary>
+            <param name="ser"></param>
+            <param name="renderer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetSideBySideIntervalInfo(Syncfusion.Windows.Forms.Chart.ChartSeries,Syncfusion.Windows.Forms.Chart.ChartSeriesRenderer)">
+            <summary>
+            Returns position side by SideIntervalInfo.
+            </summary>
+            <param name="ser"></param>
+            <param name="renderer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.GetStackInfo(Syncfusion.Windows.Forms.Chart.ChartSeries,System.Int32)">
+            <summary>
+            This method is used when series are rendered stacked. The value returned is a cumulative value of
+            Y from all series that are below the series passed in in the contained <see cref="T:Syncfusion.Windows.Forms.Chart.ChartSeriesCollection"/>.
+            <seealso cref="T:Syncfusion.Windows.Forms.Chart.ChartSeriesRenderer"/>
+            </summary>
+            <param name="ser"></param>
+            <param name="pos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RecalculateSizes">
+            <summary>
+            Updates necessary sizes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SeriesChanged(System.Object,Syncfusion.Windows.Forms.Chart.ChartSeriesCollectionChangedEventArgs)">
+            <summary>
+            Event handler to event model.Series.Changed.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.DrawAngleText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Brush,System.Drawing.Rectangle,System.Single,System.Drawing.StringAlignment,System.Drawing.StringFormat,System.Int32)">
+            <summary>
+            Draws a text under an angle.
+            </summary>
+            <param name="g"></param>
+            <param name="text"></param>
+            <param name="font"></param>
+            <param name="brush"></param>
+            <param name="bounds"></param>
+            <param name="angle"></param>
+            <param name="align"></param>
+            <param name="textFormat"></param>
+            <param name="maxWidth"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.DrawAngleText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Brush,System.Drawing.Rectangle,System.Single,System.Drawing.StringAlignment,System.Drawing.StringFormat)">
+            <summary>
+            Draws a text under an angle.
+            </summary>
+            <param name="g"></param>
+            <param name="text"></param>
+            <param name="font"></param>
+            <param name="brush"></param>
+            <param name="bounds"></param>
+            <param name="angle"></param>
+            <param name="align"></param>
+            <param name="textFormat"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.DrawAngleText(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Drawing.Brush,System.Drawing.Rectangle,System.Single,System.Drawing.StringAlignment)">
+            <summary>
+            Draws a text under an angle.
+            </summary>
+            <param name="g"></param>
+            <param name="text"></param>
+            <param name="font"></param>
+            <param name="brush"></param>
+            <param name="bounds"></param>
+            <param name="angle"></param>
+            <param name="align"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionClick(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseDown.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseDown(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseDown.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseEnter(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseMove.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseHover(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseHover.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseLeave(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseMove.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseMove(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseMove.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.RaiseChartRegionMouseUp(Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs)">
+            <summary>
+            Calling in the method ChartArea.ChartArea_MouseUp.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SetZoomFactX(System.Double)">
+            <summary>
+            Sets zoomFactorX in to fact and will have updated regions.
+            </summary>
+            <param name="fact"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SetZoomFactY(System.Double)">
+            <summary>
+            Sets zoomFactorY in to fact and will have updated regions.
+            </summary>
+            <param name="fact"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SetZoomPosX(System.Double)">
+            <summary>
+            Method sets position of zoom for axis X and repaint control.
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SetZoomPosY(System.Double)">
+            <summary>
+            Method sets position of zoom for axis Y and repaint control.
+            </summary>
+            <param name="pos"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl._Paint(System.Drawing.Graphics)">
+            <summary>
+            Draws control.
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.AddRandomData">
+            <summary>
+            Adds the random count of series and random points to them.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.BeginTransform(System.Drawing.Graphics)">
+            <summary>
+            This method is called before the beginning of transformations 
+            in the Graphics.
+            </summary>
+            <param name="g"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChangeRandomDataSeries">
+            <summary>
+            Change the type of series of random data on designTimeSeriesType.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_BackColorChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_DoubleClick(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_FontChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event Handler to event FontChanged.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.OnClick(System.EventArgs)">
+            <summary>
+            Event handler to event Click
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_MouseHover(System.Object,System.EventArgs)">
+            <summary>
+            Event Handler to event MouseHover. This method shows ToolTips.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ChartControl_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler to event TextChanged.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.CheckSeriesCompatibility">
+            <summary>
+            Checking series on the compatibility.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.CheckUpdateStatus">
+            <summary>
+            Checking of region on the necessity of updates.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.drawRangeChanged">
+            <summary>
+            ???
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.EndTransform(System.Drawing.Graphics,System.Drawing.Drawing2D.GraphicsContainer)">
+            <summary>
+            This method is called after the ending of transformations 
+            in the Graphics.
+            </summary>
+            <param name="g"></param>
+            <param name="cont"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Initialize(System.Boolean)">
+            <summary>
+            Initializing control.
+            </summary>
+            <param name="addRandomData"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.PrintChart(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Event Handler in to event PrintPage.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.ResetRandomData">
+            <summary>
+            Remove random series.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.series_AppearanceChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler to event AppearanceChanged.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.SeriesRequirementsChanged(System.Object,System.EventArgs)">
+            <summary>
+            ???
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartControl.Syncfusion#Windows#Forms#Chart#IChartAreaHost#get_Controls">
+            <summary>
+            ChartControl is the aggreggate class that contains all the other elements of a chart such as the axes and the chart display area. You
+            normally instantiate and host a ChartControl instance in your application.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ActiveIndex">
+            <summary>
+            For internal use.    
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartArea">
+            <summary>
+            Gets the chart area hosted by the ChartControl.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.AllowUserEditStyles">
+            <summary>
+            Allows the user to edit series styles when double clicking on a series.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.BackColor">
+            <summary>
+             Gets / sets backcolor of the chart control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.CalcRegions">
+            <summary>
+            If ToolTips, AutoHighlighting, or RegionHit events are used, set this to True (default). If the previous aren't used,
+            for better performance set to False.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaMargins">
+            <summary>
+            Indicates the margins that will be deduced from the ChartArea's representation rectangle.
+            Negative values are supported.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegions">
+            <summary>
+            List of ChartRegions. Please refer to <see cref="T:Syncfusion.Windows.Forms.Chart.ChartRegion"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ColumnDrawMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ColumnWidthMode">
+            <summary>
+            Specifies the mode of column drawing.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ColumnFixedWidth">
+            <summary>
+            Specifies the width of each column when <see cref="P:Syncfusion.Windows.Forms.Chart.ChartControl.ColumnWidthMode"/> is set to FixedWidthMode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.CustomPoints">
+            <summary>
+            Collection of custom points. Please refer to <see cref="T:Syncfusion.Windows.Forms.Chart.ChartCustomPoint"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Font">
+            <summary>
+            The font associated with this chart control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.HidePartialLabels">
+            <summary>
+            Used for hide or show label that goes behind an area edge.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Radar">
+            <summary>
+            Returns True if type of the first series is ChartSeriesType.Radar.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Polar">
+            <summary>
+            Returns True if type of the first series is ChartSeriesType.Polar.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.RadarStyle">
+            <summary>
+            Indicates the style of the radar chart.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.RoundingPlaces">
+            <summary>
+             The number of places to round data to for display (by default).
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.SizeMargins">
+            <summary>
+            Gets size with minimal height and width of chart control with enough places to draw chart area.
+            This property must be used generally by parent control of chart control in order to determine the size margins.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.TextPosition">
+            <summary>
+            The position of text displayed as the chart's caption. Please refer to <see cref="T:Syncfusion.Windows.Forms.Chart.ChartTextPosition"/> for
+            available options.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.KeyZoom">
+            <summary>
+            Enables zooming with keyboard shortcuts.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.MinZoomFactorX">
+            <summary>
+            The minimum allowable zooming factor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.MinZoomFactorY">
+            <summary>
+            The minimum allowable zooming factor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomFactorX">
+            <summary>
+            The zooming factor is the value by which intervals are multiplied to have the effect of a more fine grained range.
+            For example, if the calculated interval is 5 and the zoom factor is 0.5, then the zoomed interval with this zoom factor
+            will be 2.5. Therefore, there will be twice as many interval points across the same range. Scrollbars will automatically
+            appear to allow any section of the zoomed range to be viewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomFactorY">
+            <summary>
+            The zooming factor is the value by which intervals are multiplied to have the effect of a more fine grained range.
+            For example, if the calculated interval is 5 and the zoom factor is 0.5, then the zoomed interval with this zoom factor
+            will be 2.5. Therefore, there will be twice as many interval points across the same range. Scrollbars will automatically
+            appear to allow any section of the zoomed range to be viewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Zooming">
+            <summary>
+            Returns True if the chart is currently zoomed in.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomOutIncrement">
+            <summary>
+            Indicates what value to add to the ZoomFactors when the zoom out button is pressed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomPositionX">
+            <summary>
+            The offset position when zoomed along the X axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ZoomPositionY">
+            <summary>
+            The offset position when zoomed along the Y axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.HScrollBar">
+            <internalonly/>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.VScrollBar">
+            <internalonly/>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Legend">
+            <summary>
+            Configuration information for the legend object. Please refer to <see cref="!:ChartLegendInfo"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.LegendPosition">
+            <summary>
+            The position of the legend element. Please refer to <see cref="T:Syncfusion.Windows.Forms.Chart.ChartLegendPosition"/> for more information
+            on legend positioning options.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ToolBar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ToolBarController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Model">
+            <summary>
+            The model contains all the data that is associated with a chart. Models can be shared between charts. Each model can
+            be seen as a collection of a series. Each of these series contains data points and associated style information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.CompatibleSeries">
+            <summary>
+            Gets / sets compatibleSeries.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Series">
+            <summary>
+            Shortcut method that provides access to the <see cref="T:Syncfusion.Windows.Forms.Chart.ChartSeriesCollection"/> contained in the chart's model.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Axes">
+            <summary>
+            The collection of axes associated with this chart. You can add and remove axes from this collection.
+            Primary X and Y axes may not be removed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Indexed">
+            <summary>
+            Specifies if this chart is to be rendered in indexed mode. By default, chart points have X and Y values, both of
+            which are taken into account for plotting. In indexed mode, the X values are ignored. The X axis purely represents
+            the position of the points and not their X value. This mode is useful when representing data that has no real X axis value
+            except position. For example, sales of two months side-by-side.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.PrimaryXAxis">
+            <summary>
+            The primary X axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.PrimaryYAxis">
+            <summary>
+            The primary Y axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.AutoHighlight">
+            <summary>
+            Specified if points on the chart should be highlighted when the mouse hovers over them.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaBackImage">
+            <summary>
+            The chart can display an image as its background. This property specifies the image to be used as the background.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaShadow">
+            <summary>
+            Indicates whether the ChartArea has a shadow.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaToolTip">
+            <summary>
+            The ToolTip text that is to be displayed when the mouse is over the area 
+            of the chart but not over other elements of interest within the chart area.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartInterior">
+            <summary>
+            Specifies the interior of the chart. Please refer to <see cref="T:Syncfusion.Drawing.BrushInfo"/> for more information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ChartToolTip">
+            <summary>
+            The ToolTip text that is to be displayed when the mouse is over the chart 
+            but not over other elements of interest within the chart.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ClickPoint">
+            <summary>
+            ???
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Depth">
+            <summary>
+            Gets / sets axes depth, "coordinate Z". 
+            Only for enabled Series3D.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.DesignTimeSeriesType">
+            <summary>
+            This property specifies the SeriesType to be displayed during design-time. Series displayed during design-time will
+            be reset during run-time and are provided for representative display only.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ElementsSpacing">
+            <summary>
+            Gets / sets value for spacing from border inside ChartControl
+            e.g. space between ChartControl right border and legend right border if LegendPosition set to right.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.EnableXZooming">
+            <summary>
+            Specifies whether zooming should be enabled for the chart along the X axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.EnableYZooming">
+            <summary>
+            Specifies whether zooming should be enabled for the chart along the Y axis.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.MouseDownPosition">
+            <summary>
+            ???
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Palette">
+            <summary>
+            The palette that is to be used to provide default colors for series and other elements of a chart. Please refer to
+            <see cref="T:Syncfusion.Windows.Forms.Chart.ChartColorPalette"/> for available options and customization.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Rotation">
+            <summary>
+            Gets / sets the angle rotation of axes relative to axis X.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Series3D">
+            <summary>
+            Allows 3D series.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ShadowColor">
+            <summary>
+            Gets / sets color of shadow.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ShadowWidth">
+            <summary>
+            Gets / sets width of shadow.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ShowToolTips">
+            <summary>
+            Specified whether ToolTips should be displayed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.SmoothingMode">
+            <summary>
+            Specified how the chart elements should be rendered. Please refer to <see cref="P:Syncfusion.Windows.Forms.Chart.ChartControl.SmoothingMode"/> 
+            in the GDI+ documentation for more information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Spacing">
+            <summary>
+            Spacing is set as a percentage value and controls what portion of the interval partitioned for rendering gets
+            used for empty space. Default value is 10%.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.TextAlignment">
+            <summary>
+            This property specifies the alignment of the chart's text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.Tilt">
+            <summary>
+            Gets / sets the angle tilt of axes relative to axis Y.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.PrintDocument">
+            <summary>
+            The print document associated with this chart control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.VirtualSize">
+            <summary>
+            Gets size or if printing == True virtualsize.
+            Printing == True when call method Draw.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartAreaPaint">
+            <summary>
+            Event that is raised when the ChartArea is painted.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartFormatAxisLabel">
+            <summary>
+            Event for dynamic formatting of axis labels.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionClick">
+            <summary>
+            Event that will be raised when the mouse is clicked within a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseDown">
+            <summary>
+            Event that will be raised when the mouse is pressed down within a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseEnter">
+            <summary>
+            Event that will be raised when the mouse enters a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseHover">
+            <summary>
+            Event that will be raised when the mouse hovers over a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseLeave">
+            <summary>
+            Event that will be raised when the mouse leaves a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseMove">
+            <summary>
+            Event that will be raised when the mouse is released within a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.ChartRegionMouseUp">
+            <summary>
+            Event that will be raised when the mouse is released within a chart region.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Windows.Forms.Chart.ChartControl.VisibleRangeChanged">
+            <summary>
+            Event that will be raised when the visible range changes during zooming.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.IndexValues">
+            <internalonly/>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.LegendPainted">
+            <summary>
+            Gets / sets legendPainted. legendPainted == True if legend is drawn.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.NeedRegionUpdate">
+            <summary>
+            Gets / sets needRegionUpdate. Updating of region for chart.
+            This property after the update is set False.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.RequireAxes">
+            <summary>
+            Gets or sets a value indicating whether the chart requires axes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.RequireInvertedAxes">
+            <summary>
+            Gets or sets a value indicating whether the chart requires inverted axes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.AreaPainted">
+            <summary>
+            Gets / sets areaPainted. areaPainted == True if area is drawn.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.ControlPainted">
+            <summary>
+            Gets / sets controlPainted. controlPainted == True if area is drawn.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.ChartControl.TextRenderingHint">
+            <summary>
+            TextRenderingHint property.
+            Specifies the way text is drawn. <see cref="P:Syncfusion.Windows.Forms.Chart.ChartControl.TextRenderingHint"/> is set to FixedWidthMode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner">
+            <summary>
+            This is a designer for the ChartControl control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.dvDisplayChartWizard">
+            <summary>
+            Designer verb for adding a button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.dvcVerbs">
+            <summary>
+            The collection of designer verbs
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.#ctor">
+            <summary>
+            Initializes a new instance of the ButtonEditDesigner class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.HandleChartWizard(System.Object,System.EventArgs)">
+            <summary>
+            Handle the AddButton 
+            </summary>
+            <param name="sender">The designer.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.Dispose(System.Boolean)">
+            <summary>
+            Overrides Dispose.  Here we remove our handler for the selection changed
+            event.  With designers, it is critical that they clean up any events they
+            have attached.  Otherwise, during the course of an editing session many
+            designers may get created and never destroyed.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary that contains the properties for the class of the component. </param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.RemovePropertyBrowsable(System.ComponentModel.IComponent,System.String[],System.Collections.IDictionary)">
+            <summary>
+            Remove a set of properties.
+            </summary>
+            <param name="control">The control to which the changes apply.</param>
+            <param name="strcolln">The array of property names to exclude.</param>
+            <param name="properties">Contains the properties for the class of the component.</param>
+        </member>
+        <member name="P:Syncfusion.Windows.Forms.Chart.Design.ChartControlDesigner.Verbs">
+            <summary>
+            The designer verbs collection.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Chart.ChartWizardForm">
+            <summary>
+            Summary description for ChartWizardForm.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartWizardForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartWizardForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartWizardForm.InitializeChartData">
+            <summary>
+            Initializes the ChartControl's data and sets the Chart type
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.ChartWizardForm.TransferValuesFromChartBeingDesigned">
+            <summary>
+            Set the values from the ChartControl being designed to the various controls on the
+            Wizard form.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog">
+            <summary>
+            Summary description for CollectionEditorDialog.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.SetCollection(System.Collections.IList,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.GetCollection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.bttnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.lsbxItems_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.bttnRemove_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.bttnOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Syncfusion.Windows.Forms.Chart.CollectionEditorDialog.bttnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.ChartWindowsAssembly">
+            <summary>
+            This class holds the name of the Syncfusion.Chart.Windows assembly and provides a helper 
+            routine that helps with resolving types when loading a serialization stream and when 
+            the framework probes for assemblies by reflection. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ChartWindowsAssembly.Name">
+            <summary>
+            The full name of this assembly without version information: "Syncfusion.Chart.Windows".
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ChartWindowsAssembly.Assembly">
+            <summary>
+            A reference to the <see cref="T:System.Reflection.Assembly"/> for the chart assembly.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.ChartWindowsAssembly.RootNamespace">
+            <summary>
+            The root namespace of this assembly. Used internally for locating resources within the assembly.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.ChartWindowsAssembly.AssemblyResolver(System.Object,System.ResolveEventArgs)">
+            <summary>
+            This delegate helps with resolving types and can be used as an eventhandler
+            for a <see cref="E:System.AppDomain.AssemblyResolve"/> event.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The event data with information about the type.</param>
+            <returns>A reference to the assembly where the type is located.</returns>
+        </member>
+    </members>
+</doc>

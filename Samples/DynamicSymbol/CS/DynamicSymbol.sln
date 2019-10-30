@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicSymbol", "DynamicSymbol.csproj", "{E765E21E-E507-41AE-8C41-D40926BE6331}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E765E21E-E507-41AE-8C41-D40926BE6331}.Debug.ActiveCfg = Debug|.NET
+		{E765E21E-E507-41AE-8C41-D40926BE6331}.Debug.Build.0 = Debug|.NET
+		{E765E21E-E507-41AE-8C41-D40926BE6331}.Release.ActiveCfg = Release|.NET
+		{E765E21E-E507-41AE-8C41-D40926BE6331}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

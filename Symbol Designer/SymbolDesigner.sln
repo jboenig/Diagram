@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Symbol Designer", "Symbol Designer.csproj", "{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncfusion.Diagram", "..\Src\Syncfusion.Diagram.csproj", "{7B014FBB-61CA-4CB6-86A4-9C23211EA303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncfusion.Diagram.Controls", "..\Src\Controls\Syncfusion.Diagram.Controls.csproj", "{0F6F524C-F898-487B-87C4-6EDF2D07E017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Documentation|Any CPU.Build.0 = Documentation|Any CPU
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2126AF3A-DBA9-43C8-8C6A-C7177770EA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Documentation|Any CPU.Build.0 = Documentation|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Documentation|Any CPU.Build.0 = Documentation|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8728A2BF-EE99-4FB0-8816-3D1ADBFDA299}
+	EndGlobalSection
+EndGlobal

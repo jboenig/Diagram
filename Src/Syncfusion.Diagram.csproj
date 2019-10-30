@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B014FBB-61CA-4CB6-86A4-9C23211EA303}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Syncfusion.Diagram</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Syncfusion.Windows.Forms.Diagram</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Documentation|AnyCPU' ">
+    <OutputPath>..\bin\Documentation\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>Syncfusion.Diagram.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\CollectionEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ConnectionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\LabelCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\LayerCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\NodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\PortCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ToolCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\VerbCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\AlignCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\DeleteVertexCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\GroupCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\InsertNodesCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\InsertVertexCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\LinkCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\MacroCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\MoveCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\MoveLinkCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\MoveVertexCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\NodeCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RemoveNodesCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\ResizeCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RotateCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\ScaleCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\SpacingCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\UngroupCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\ZOrderCmd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\LineDecoratorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\LineEndpointEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\LinkLabelCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\SymbolLabelCollectionEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\BitmapNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\ImageNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Images\MetafileNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interactivity\HitTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interactivity\IMouseController.cs" />
+    <Compile Include="Interactivity\Selection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Layout\LayoutManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\CompositeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Controller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\DiagramController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\EditSymbolController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Graph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Layer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\LayerContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\LayoutGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\LineGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Model.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\NodeEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\PointGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\View.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Object Hierarchy\ViewEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Printing\DiagramPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Printing\Print.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\PropertyContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\Bounds2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\Draw.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\Graphics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\MatrixStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\Measurements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\Transform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rendering\TransformEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\Resources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Arc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\CircleDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\ClosedCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Curve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\DiamondDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Ellipse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\EndPoints.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\FilledArrowDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\FilledLineDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\FilledShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Line.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\LineDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\OpenArrowDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\OrthogonalLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Points.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Polygon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\PolyLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Rectangle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\RoundRect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shapes\Shape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shared\Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shared\Geometry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shared\Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shared\NativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\BackgroundStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\BorderStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\EditStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\FillStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\FontStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\LineStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\Style.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Styles\TrackingStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\CenterPort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\CirclePort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\Connection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\Label.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\LabelContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\LinkLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\LinkPort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\Port.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\PortContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\Symbol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolModel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Symbols\SymbolPalette.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Text\TextBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Text\TextNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ArcTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\BitmapTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ClickEventReceiver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ClosedCurveTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\CurveTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\EllipseTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\GroupTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\InsertSymbolTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\KeyboardEventReceiver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\LineTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\LinkTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\MetafileTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\MouseEventReceiver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\MoveTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\OrthogonalLineTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\PanTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\PolygonTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\PolyLineTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\PortTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\RectangleTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\RectangleToolBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ResizeTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\RotateTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\RoundRectTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\SelectTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\TextTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Tool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\UngroupTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\VertexEditTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ZoomTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracking\NodeTracker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\BackgroundStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\BorderStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\ControllerConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\EditStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\FillStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\FontStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\LabelStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\LayoutGridConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\LineDecoratorConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\LineStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\ModelConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\PointFTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\SizeFTypeConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\TrackingStyleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Type Converters\ViewConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Verbs\SetBounds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Verbs\TranslateNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Verbs\Verb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Design\LineDecoratorListBox.resx">
+      <DependentUpon>LineDecoratorListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Object Hierarchy\Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Object Hierarchy\View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Connect.cur" />
+    <EmbeddedResource Include="Resources\DeleteVertex.cur" />
+    <EmbeddedResource Include="Resources\EditVertex.cur" />
+    <EmbeddedResource Include="Resources\InsertVertex.cur" />
+    <EmbeddedResource Include="Resources\Panning.cur" />
+    <EmbeddedResource Include="Resources\PanReady.cur" />
+    <EmbeddedResource Include="Resources\Rotate.cur" />
+    <EmbeddedResource Include="Resources\RotateCopy.cur" />
+    <EmbeddedResource Include="Resources\RotateReady.cur" />
+    <EmbeddedResource Include="Resources\SmallImages.resx" />
+    <EmbeddedResource Include="Resources\Strings.resx" />
+    <EmbeddedResource Include="Resources\Textures.resx" />
+    <EmbeddedResource Include="Resources\Zoom.cur" />
+    <EmbeddedResource Include="Symbols\SymbolModel.resx">
+      <DependentUpon>SymbolModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Text\TextEdit.resx">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft.Net.Framework.3.5.SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

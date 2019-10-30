@@ -1,0 +1,9 @@
+// Create a new symbol
+Symbol symbol = this.SymbolPalette.CreateSymbol();
+// Add a label to the symbol
+Label lbl = symbol.AddLabel(BoxPosition.Center, "Hello World");
+lbl.FontStyle.Size = 10;
+lbl.FontStyle.Family = "Verdana";
+// Execute command to insert the symbol into the diagram
+InsertCommand insCmd = new InsertCommand(symbol);
+this.Diagram.ExecuteCommand(insCmd);

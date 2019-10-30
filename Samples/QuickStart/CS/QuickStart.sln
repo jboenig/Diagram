@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart", "QuickStart.csproj", "{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncfusion.Diagram", "..\..\..\Src\Syncfusion.Diagram.csproj", "{7B014FBB-61CA-4CB6-86A4-9C23211EA303}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syncfusion.Diagram.Controls", "..\..\..\Src\Controls\Syncfusion.Diagram.Controls.csproj", "{0F6F524C-F898-487B-87C4-6EDF2D07E017}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Documentation = Documentation
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Debug.ActiveCfg = Debug|.NET
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Debug.Build.0 = Debug|.NET
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Documentation.ActiveCfg = Debug|.NET
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Documentation.Build.0 = Debug|.NET
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Release.ActiveCfg = Release|.NET
+		{F8D67D9C-310E-4934-AA35-070BAA2CBA7C}.Release.Build.0 = Release|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Debug.ActiveCfg = Debug|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Debug.Build.0 = Debug|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Documentation.ActiveCfg = Documentation|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Documentation.Build.0 = Documentation|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Release.ActiveCfg = Release|.NET
+		{7B014FBB-61CA-4CB6-86A4-9C23211EA303}.Release.Build.0 = Release|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Debug.ActiveCfg = Debug|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Debug.Build.0 = Debug|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Documentation.ActiveCfg = Documentation|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Documentation.Build.0 = Documentation|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Release.ActiveCfg = Release|.NET
+		{0F6F524C-F898-487B-87C4-6EDF2D07E017}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
